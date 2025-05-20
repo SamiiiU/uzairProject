@@ -1,0 +1,48 @@
+/* Slick Dots Container */
+.slick-dots {
+  display: flex !important; /* Ensures dots are laid out horizontally */
+  justify-content: center; /* Centers the dots */
+  align-items: center;
+  position: absolute;
+  width: 100%; /* Full width to center horizontally */
+  bottom: -10%; /* Vertically center */
+  /* Adjust for perfect centering */
+  margin-top: 0;
+}
+
+/* Individual Dot Wrapper */
+.slick-dots li {
+  margin: 0 8px; /* Space between dots */
+}
+
+/* Custom Dot Size */
+.slick-dots li button {
+  width: 10px; /* Custom width for each dot */
+  height: 4px; /* Custom height for each dot */
+  background-color: gray; /* Default color of dots */
+  border: none; /* Remove border */
+  border-radius: 10px; /* Make dots rectangular */
+  padding: 0; /* Remove extra padding */
+  transform-origin: center; /* Ensure the dot grows from the center */
+  transition: 0.3s width, 0.3s height, 0.3s background-color; /* Smooth transition for width, height, and color */
+}
+
+/* Hide the default pseudo-element */
+.slick-dots li button::before {
+  display: none;
+}
+
+/* Active Dot Styling */
+.slick-dots li.slick-active button {
+  border-radius: 20px;
+  background-color: #207DE9; /* Active dot color */
+  width: 20px; /* Active dot width (expands from the center) */
+  height: 6px; /* Active dot height (expands from the center) */
+  transition: 0.3s all; /* Smooth transition on active state */
+}
+
+@media (min-width : 640px) {
+  .slick-slide {
+    padding: 0 30px; /* Adjust this value to control the gap */
+  }
+}
