@@ -43,7 +43,7 @@ const Hero = () => {
     // }
     return (
 
-        <div  style={{backgroundImage : `url(${heroBG})` , backgroundSize : 'cover' , backgroundRepeat : 'no-repeat' , backgroundImage : 'center'}} className='w-full  h-auto bg-slate-400  text-white px-4 xl:px-28 sm:px-20  2xl:px-80  lg:pt-48 pt-72  pb-20 z-10 flex justify-center  flex-col lg:flex-row gap-10  relative'>
+        <div  style={{backgroundImage : `url(${heroBG})` , backgroundSize : 'cover' , backgroundRepeat : 'no-repeat' }} className='w-full  h-auto bg-slate-400  text-white px-4 xl:px-28 sm:px-20  2xl:px-80  lg:pt-48 pt-72  pb-20 z-10 flex justify-center  flex-col lg:flex-row gap-10  relative'>
 
 
                 {/* Home text  */}
