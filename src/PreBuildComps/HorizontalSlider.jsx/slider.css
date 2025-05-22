@@ -1,0 +1,26 @@
+.vertical-pagination {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 10;
+  }
+  
+  .vertical-pagination .swiper-pagination-bullet {
+    background-color: #cbd5e0;
+    opacity: 1;
+    width: 10px;
+    height: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .vertical-pagination .swiper-pagination-bullet-active {
+    background-color: #207DE9;
+    height: 20px;
+  }
+  
+
+  

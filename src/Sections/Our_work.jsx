@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import CustomSlider from '../PreBuildComps/CustomSlider/CustomSlider'
 import { packages_data } from '../WebData/packages'
 import '../app.css'
 
@@ -19,7 +18,7 @@ const Our_work = () => {
     <div className='w-full text-textColor  px-4 2xl:px-72  sm:px-10    pt-24   pb-20 z-10  relative'>
       <h1 className='text-[8rem] w-full text-center font-[900] opacity-20 absolute left-1/2 -translate-x-1/2 top-0'>See Our Work</h1>
 
-      <h1 className='text-5xl font-bold text-center'>See Our Work</h1>
+      <h1 className='text-[4rem] font-bold text-center'>See Our Work</h1>
       <p className='text-center text-xl'>Get the most user friendly website designs tailored to your business — across 90+ industries. We bring your vision to life!</p>
 
       <div className='w-full flex justify-center items-center gap-x-6 text-xl rounded-xl mt-8'>

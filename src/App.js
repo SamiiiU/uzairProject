@@ -8,6 +8,15 @@ import Hero_two from './Sections/Hero_two';
 import Our_Packages from './Sections/Our_Packages';
 import Our_work from './Sections/Our_work';
 import CTA from './Sections/CTA';
+import WebMade from './Sections/WebMade';
+
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import Testimonals from './Sections/Testimonals';
+import Footer from './Sections/Footer';
+
 
 
 // Lazy load components
@@ -32,6 +41,12 @@ function App() {
         <Our_work/>
 
         <CTA/>
+
+        <WebMade/>
+
+        <Testimonals/>
+
+        <Footer/>
 
     </GlobalProvider>
     </Suspense>
