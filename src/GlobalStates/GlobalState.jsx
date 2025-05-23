@@ -17,7 +17,7 @@ export const GlobalProvider = ({ children }) => {
     const [price , setPrice] = useState(null)
     const [packageSelect , setPackage] = useState("");
     const [scrwidth, setWidth] = useState(window.innerWidth); 
-    const [isFormVisible , setIsFormVisible] = useState(true);
+    const [isFormVisible , setIsFormVisible] = useState(false);
     
     useEffect(() => {
         const handleResize = () => setWidth(window.innerWidth);

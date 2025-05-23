@@ -5,7 +5,7 @@ import { useGlobalContext } from '../GlobalStates/GlobalState';
 import emailjs from '@emailjs/browser';
 
 const CommonForm = () => {
-  const { isFormVisible, setIsFormVisible } = useGlobalContext();
+  const { isFormVisible, setIsFormVisible , scrwidth } = useGlobalContext();
   const formRef = useRef();
   const [isSending, setIsSending] = useState(false);
 
@@ -53,12 +53,20 @@ const CommonForm = () => {
   return (
     <>
       {isFormVisible && (
-        <div className='w-full flex z-50 fixed top-0 py-4 px-4 overflow-y-scroll h-screen left-0 justify-center 2xl:items-center items-start text-white bg-black/50 overflow-x-hidden'>
-          <span onClick={() => setIsFormVisible(false)} className='absolute top-0 right-0 p-2 text-4xl cursor-pointer'>
-            <RxCross1 />
+        <div className='w-full flex z-50 fixed top-0 py-4 px-4 overflow-y-scroll h-screen left-0 justify-center 2xl:items-center lg:items-start items-center text-white bg-black/50 overflow-x-hidden'>
+          
+          {scrwidth < 800 && 
+          <span onClick={() => setIsFormVisible(false)} className='absolute top-0 right-0 p-2 text-2xl cursor-pointer'>
+          <RxCross1 />
           </span>
+        }
 
-          <div className='bg-dakBlue sm:p-10 p-6 rounded-3xl'>
+          <div className='bg-dakBlue sm:p-10 p-6 rounded-3xl relative'>
+            {scrwidth > 800 && (
+              <span onClick={() => setIsFormVisible(false)} className='absolute top-2 right-2 p-2 text-2xl cursor-pointer'>
+              <RxCross1 />
+              </span>
+            )}
             <h1 className='md:text-4xl text-xl text-center'>Get 75% Off with FREE LOGO</h1>
 
             <form ref={formRef} onSubmit={handleSubmit} className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-3 mt-6">

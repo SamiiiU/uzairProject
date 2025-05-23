@@ -36,17 +36,25 @@ function App() {
             <Navbar />
 
             <Hero />
-            <Hero_two />
+            <div id='Home'>
+              <Hero_two />
+            </div>
 
-            <Our_Packages />
+            <div id='Packages'>
+              <Our_Packages />
+            </div>
 
-            <Our_work />
+            <div id='Work'>
+              <Our_work />
 
-            <CTA />
+              <CTA />
 
-            <WebMade />
+              <WebMade />
+            </div>
 
+            <div id='reviews'>
             <Testimonals />
+            </div>
 
             <Footer />
 
