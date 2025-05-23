@@ -25,7 +25,7 @@ const Testimonals = () => {
 
   return (
     <div className='w-full text-textColor px-4 2xl:px-72 xl:px-40 sm:px-20 pt-16 pb-20 relative'>
-      <h1 className='xl:text-[6rem] md:text-[5rem] md:block hidden w-full text-center font-[900] opacity-20 absolute left-1/2 -translate-x-1/2 top-0'>
+      <h1 className='xl:text-[6rem] md:text-[5rem] md:block hidden w-full text-center font-bold opacity-5 absolute left-1/2 -translate-x-1/2 top-0'>
         Our Client Say
       </h1>
 

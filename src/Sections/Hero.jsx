@@ -36,8 +36,8 @@ const Hero = () => {
                 </div>
 
                 <div className=' flex   gap-4 md:w-auto w-full   '>
-                    <span onClick={() => setIsFormVisible(true)} className=' sm:px-10 px-3 sm:py-4 py-2 hover:-translate-y-3 font-bold cursor-pointer transition-all duration-300 border-[1px] border-white bg-lightBlue text-center rounded-full '> Avail 75% Discount</span>
-                    <span onClick={() => scrollToSection("Packages")} className='sm:px-10 px-3 sm:py-4 py-2 hover:-translate-y-3 font-bold cursor-pointer transition-all duration-300 border-[1px] border-white bg-lightBlue text-center rounded-full'>View Packages</span>
+                    <span onClick={() => setIsFormVisible(true)} className='md:text-sm text-xs  sm:px-10 px-3 sm:py-4 py-2 hover:-translate-y-3 font-bold cursor-pointer transition-all duration-300 border-[1px] border-white bg-lightBlue text-center rounded-full '> Avail 75% Discount</span>
+                    <span onClick={() => scrollToSection("Packages")} className='md:text-sm text-xs sm:px-10 px-3 sm:py-4 py-2 hover:-translate-y-3 font-bold cursor-pointer transition-all duration-300 border-[1px] border-white bg-lightBlue text-center rounded-full'>View Packages</span>
                 </div>
 
                 <img src={heroTrust} alt="TrustPilot" className='w-auto h-7' />
@@ -52,16 +52,16 @@ const Hero = () => {
                     {step == 1 && (
                         <div className='space-y-4 mt-6 w-full '>
                             <div className='w-full grid md:grid-cols-2 grid-cols-1 gap-3 '>
-                                <input type='text' placeholder='Full Name*' className='sm:flex-1 p-2 border-none outline-none bg-inputBoxColor rounded-xl col-span-1' />
+                                <input type='text' placeholder='Full Name*' className='md:text-sm text-xs sm:flex-1 p-2 border-none outline-none bg-inputBoxColor rounded-xl col-span-1' />
 
-                                <input type='text' placeholder='Email Address*' className='sm:flex-1 p-2  outline-none bg-inputBoxColor rounded-xl col-span-1' />
+                                <input type='text' placeholder='Email Address*' className='md:text-sm text-xs sm:flex-1 p-2  outline-none bg-inputBoxColor rounded-xl col-span-1' />
                             </div>
 
-                            <input type='number' placeholder='Phone No*' className='w-full p-2  outline-none bg-inputBoxColor rounded-xl' />
+                            <input type='number' placeholder='Phone No*' className='md:text-sm text-xs w-full p-2  outline-none bg-inputBoxColor rounded-xl' />
 
-                            <textarea placeholder='To help us understand better, enter brief description about your project' className='w-full p-2 border-none outline-none bg-inputBoxColor rounded-xl ' />
+                            <textarea placeholder='To help us understand better, enter brief description about your project' className='md:text-sm text-xs w-full p-2 border-none outline-none bg-inputBoxColor rounded-xl ' />
 
-                            <button className='px-10 py-2 rounded-full font-semibold bg-white text-dakBlue '> Claim free consultant</button>
+                            <button className='md:text-sm text-xs px-10 py-2 rounded-full font-semibold bg-white text-dakBlue '> Claim free consultant</button>
                         </div>
                     )}
 
@@ -81,7 +81,7 @@ const Hero = () => {
                         </div>
                     )}
 
-                    <p className='font-semibold mt-5'>Any Confusion? Why Not Discuss Your Idea?</p>
+                    <p className='font-semibold mt-5 md:text-sm text-xs'>Any Confusion? Why Not Discuss Your Idea?</p>
                 </div>
 
 

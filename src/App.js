@@ -17,6 +17,7 @@ import 'swiper/css/pagination';
 import Testimonals from './Sections/Testimonals';
 import Footer from './Sections/Footer';
 import CommonForm from './CommonForm/CommonForm';
+import TawkMessenger from './LiveChat/TawkMessenger';
 
 import './app.css'
 
@@ -61,7 +62,9 @@ function App() {
             <Footer />
 
             <CommonForm />
+          <TawkMessenger/>
           </div>
+
 
         </GlobalProvider>
       </Suspense>

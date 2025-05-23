@@ -19,8 +19,8 @@ const Navbar = () => {
       <div className='w-screen bg-lightBlue z-20 2xl:px-80 lg:px-40 xl:px-28 sm:px-20 xs:px-10 px-4 flex lg:flex-row flex-col sm:gap-4 gap-2 text-white justify-between sm:items-center py-[5px] relative'>
         <h1 className='font-bold'>Limited Time Offer - Activate Your 75% Off Coupon!</h1>
         <div className='lg:w-auto w-full flex sm:flex-row flex-col sm:gap-20 gap-2 justify-between sm:items-center items-start'>
-          <h1 onClick={() => setIsFormVisible(true)} className='underline cursor-pointer'>Activate Your Coupon Now</h1>
-          <span onClick={() => setIsFormVisible(true)} className='bg-dakBlue px-4 py-2 rounded-lg border-[1px] border-white cursor-pointer'>
+          <h1 onClick={() => setIsFormVisible(true)} className='underline font-semibold cursor-pointer'>Activate Your Coupon Now</h1>
+          <span onClick={() => setIsFormVisible(true)} className='md:text-sm text-xs font-semibold bg-dakBlue px-4 py-2 rounded-lg border-[1px] border-white cursor-pointer'>
             Claim your website + free Logo
           </span>
         </div>
@@ -51,8 +51,8 @@ const Navbar = () => {
         )}
 
         {/* 🔹 Contact Info */}
-        <span className="flex font-semibold items-center"><IoMdCall /> :+1 234 23144212</span>
-        <span className='flex items-center gap-x-2 font-semibold rounded-full border-[1px] border-white bg-lightBlue md:px-4 py-2'>
+        <p className="flex font-semibold items-center md:text-sm text-xs"><IoMdCall /> :(832) 737-1637</p>
+        <span onClick={() => window.Tawk_API?.maximize()} className='cursor-pointer flex md:text-sm text-xs items-center gap-x-2 font-semibold rounded-full border-[1px] border-white bg-lightBlue md:px-4 py-2 px-2'>
           <IoChatbubble /> Live Chat
         </span>
       </div>

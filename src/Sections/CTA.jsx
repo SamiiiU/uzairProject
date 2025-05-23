@@ -14,7 +14,7 @@ const CTA = () => {
         <div className='w-full flex  justify-center items-center md:gap-6 gap-3'>
             <button onClick={() => setIsFormVisible(true)} className='sm:px-10 px-3 sm:py-4 py-2 text-lg bg-dakBlue border-white border-[1px]  rounded-full'>Avail 75% Discount</button>
 
-            <button className='sm:px-10 px-3 sm:py-4 py-2 text-lg bg-dakBlue border-white border-[1px]  rounded-full flex  font-semibold  items-center '><IoMdCall /> : +1 234 23144212</button>
+            <button className='sm:px-10 px-3 sm:py-4 py-2 text-lg bg-dakBlue border-white border-[1px]  rounded-full flex  font-semibold  items-center '><IoMdCall /> : (832) 737-1637</button>
         </div>
       
     </div>
