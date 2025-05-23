@@ -18,6 +18,8 @@ import Testimonals from './Sections/Testimonals';
 import Footer from './Sections/Footer';
 import CommonForm from './CommonForm/CommonForm';
 
+import './app.css'
+
 
 
 // Lazy load components
@@ -32,7 +34,7 @@ function App() {
       {/* Wrap Routes in Suspense */}
       <Suspense fallback={<Loader />}>
         <GlobalProvider>
-          <div className='relative overflow-x-hidden font-poppins_sans'>
+          <div className='relative overflow-x-hidden scrollbar-hidden font-poppins_sans'>
             <Navbar />
 
             <Hero />

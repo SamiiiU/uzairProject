@@ -18,6 +18,26 @@ export const GlobalProvider = ({ children }) => {
     const [packageSelect , setPackage] = useState("");
     const [scrwidth, setWidth] = useState(window.innerWidth); 
     const [isFormVisible , setIsFormVisible] = useState(false);
+    const [isNavVisible , setIsNavVisible] = useState(false)
+
+
+    // 👇 Smooth scroll with offset (for fixed navbar)
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      const offset = 100; // Adjust based on your navbar height
+      const bodyRect = document.body.getBoundingClientRect().top;
+      const elementRect = element.getBoundingClientRect().top;
+      const elementPosition = elementRect - bodyRect;
+      const offsetPosition = elementPosition - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth',
+      });
+      setIsNavVisible(false)
+    }
+    } ;
     
     useEffect(() => {
         const handleResize = () => setWidth(window.innerWidth);
@@ -39,7 +59,9 @@ export const GlobalProvider = ({ children }) => {
             packageSelect , setPackage,
             isOrder , setIsOrder,
             scrwidth,
-            isFormVisible , setIsFormVisible
+            isFormVisible , setIsFormVisible,
+            scrollToSection,
+            isNavVisible , setIsNavVisible
 
             }}>
             {children}

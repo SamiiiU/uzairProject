@@ -9,26 +9,9 @@ import { RxCross1 } from "react-icons/rx";
 
 
 const Navbar = () => {
-  const { scrwidth, setIsFormVisible } = useGlobalContext();
-  const [isNavVisible , setIsNavVisible] = useState(true)
+  const { scrwidth, setIsFormVisible ,scrollToSection ,isNavVisible , setIsNavVisible} = useGlobalContext();
 
-  // 👇 Smooth scroll with offset (for fixed navbar)
-  const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      const offset = 100; // Adjust based on your navbar height
-      const bodyRect = document.body.getBoundingClientRect().top;
-      const elementRect = element.getBoundingClientRect().top;
-      const elementPosition = elementRect - bodyRect;
-      const offsetPosition = elementPosition - offset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth',
-      });
-      setIsNavVisible(false)
-    }
-  };
+  
 
   return (
     <div className='fixed top-0 left-0 z-50'>
@@ -74,13 +57,15 @@ const Navbar = () => {
         </span>
       </div>
 
-      <div className='sm:px-20 z-0 xs:px-10 p-4 bg-white text-black flex flex-col gap-y-8 '
-      style={{transform : isNavVisible ? 'translateY(0)' : 'translateY(-100%)' , transition : 'all 0.5s ease-in-out'}} >
-            <h1 onClick={() => scrollToSection("Home")} className='cursor-pointer'>About Us</h1>
-            <h1 onClick={() => scrollToSection("Packages")} className='cursor-pointer'>Packages</h1>
-            <h1 onClick={() => scrollToSection("Work")} className='cursor-pointer'>Portfolio</h1>
-            <h1 onClick={() => scrollToSection("reviews")} className='cursor-pointer'>Reviews</h1>
-      </div>
+      {scrwidth < 600 && (
+        <div className='sm:px-20 z-0 xs:px-10 p-4 bg-white text-black flex flex-col gap-y-8 '
+        style={{transform : isNavVisible ? 'translateY(0)' : 'translateY(-100%)' , transition : 'all 0.5s ease-in-out'}} >
+              <h1 onClick={() => scrollToSection("Home")} className='cursor-pointer'>About Us</h1>
+              <h1 onClick={() => scrollToSection("Packages")} className='cursor-pointer'>Packages</h1>
+              <h1 onClick={() => scrollToSection("Work")} className='cursor-pointer'>Portfolio</h1>
+              <h1 onClick={() => scrollToSection("reviews")} className='cursor-pointer'>Reviews</h1>
+        </div>
+      )}
 
     </div>
   );

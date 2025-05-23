@@ -5,18 +5,18 @@
   }
   
   .custom-scrollbar::-webkit-scrollbar-thumb {
-    background-color: rgb(121, 213, 255); /* Set scrollbar thumb color */
+    background-color: white; /* Set scrollbar thumb color */
     border-radius: 10px; /* Round the scrollbar thumb */
     border: 2px solid transparent; /* Optional: adds spacing inside the thumb */
     background-clip: padding-box; /* Prevents background from extending into border */
   }
   
   .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-    background-color: rgb(100, 200, 255); /* Change thumb color on hover */
+    background-color: white; /* Change thumb color on hover */
   }
   
   .custom-scrollbar::-webkit-scrollbar-track {
-    background: rgb(121, 213, 255); /* Set scrollbar track color */
+    background: white; /* Set scrollbar track color */
     border-radius: 10px; /* Round the scrollbar track */
   }
   
@@ -28,9 +28,11 @@
   /* For Firefox */
   .custom-scrollbar {/* Makes the scrollbar thinner */
     scrollbar-width: thin;
-    scrollbar-color: rgb(121, 213, 255) transparent;
+    scrollbar-color: white transparent;
     scroll-behavior: smooth;
   
   }
+
+ 
 
   /* this is all for a custom scroll bar  */
