@@ -32,7 +32,7 @@ function App() {
       {/* Wrap Routes in Suspense */}
       <Suspense fallback={<Loader />}>
         <GlobalProvider>
-          <div className='relative overflow-x-hidden font-poppins'>
+          <div className='relative overflow-x-hidden font-poppins_sans'>
             <Navbar />
 
             <Hero />

@@ -14,7 +14,7 @@ module.exports = {
     },
 
     fontFamily: {
-        poppins : ["Merriweather", "serif"],
+        poppins_sans : ["Montserrat", 'sans-serif'],
     },
 
     keyframes: {
