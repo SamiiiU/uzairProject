@@ -21,15 +21,15 @@ const WebMade = () => {
   
 
   return (
-    <div className='w-full text-textColor bg-grayColor px-4 2xl:px-72  sm:px-10    pt-24   pb-20 z-10  relative'>
-      <h1 className='text-[5rem] w-full text-center font-[900] opacity-20 absolute left-1/2 -translate-x-1/2 top-10'>Website Designs We Make</h1>
+    <div className='w-full  text-textColor bg-grayColor px-4 2xl:px-72  sm:px-10    pt-16   pb-20 z-10  relative'>
+      <h1 className='xl:text-[6rem] md:text-[5rem] md:block hidden w-full text-center font-[900] opacity-20 absolute left-1/2 -translate-x-1/2 top-0'>Website Designs We Make</h1>
 
-      <h1 className='text-[4rem] font-bold text-center'>Website Designs We Make</h1>
-      <p className='text-center text-xl'>Get the most user friendly website designs tailored to your business — across 90+ industries. We bring your vision to life!</p>
+      <h1 className='lg:text-5xl text-3xl font-bold text-center'>Website Designs We Make</h1>
+      <p className='text-center text-xl'>Website Designs That Make a Great First Impression</p>
 
       
 
-        <div className='w-full px-4  my-10'>
+        <div className='w-full px-4  my-10 hidden'>
         <ReusableSlider>
         <div className="w-full  px-40    flex justify-center items-center shadow-lg ">
         {web_work.map((slideContent, index) => (
@@ -47,7 +47,7 @@ const WebMade = () => {
           </SwiperSlide>
         ))}
         </div>
-        </ReusableSlider>
+        </ReusableSlider> 
         </div>
     </div>
   )

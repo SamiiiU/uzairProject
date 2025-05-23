@@ -1,4 +1,4 @@
-import React , {lazy , Suspense, useEffect, useState} from 'react';
+import React, { lazy, Suspense, useEffect, useState } from 'react';
 // import Loader from './Animation/Loader';
 import { GlobalProvider } from './GlobalStates/GlobalState';
 import Loader from './Animation/Loader';
@@ -16,6 +16,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import Testimonals from './Sections/Testimonals';
 import Footer from './Sections/Footer';
+import CommonForm from './CommonForm/CommonForm';
 
 
 
@@ -24,32 +25,36 @@ import Footer from './Sections/Footer';
 // const Hybrid = lazy(() => import('./Services/AppDev/Hybrid'));
 
 function App() {
-  
-  
+
+
   return (
     <>
-    {/* Wrap Routes in Suspense */}
-    <Suspense fallback={<Loader />}>
-    <GlobalProvider>
-        <Navbar/>
+      {/* Wrap Routes in Suspense */}
+      <Suspense fallback={<Loader />}>
+        <GlobalProvider>
+          <div className='relative overflow-x-hidden font-poppins'>
+            <Navbar />
 
-        <Hero/>
-        <Hero_two/>
+            <Hero />
+            <Hero_two />
 
-        <Our_Packages/>
+            <Our_Packages />
 
-        <Our_work/>
+            <Our_work />
 
-        <CTA/>
+            <CTA />
 
-        <WebMade/>
+            <WebMade />
 
-        <Testimonals/>
+            <Testimonals />
 
-        <Footer/>
+            <Footer />
 
-    </GlobalProvider>
-    </Suspense>
+            <CommonForm />
+          </div>
+
+        </GlobalProvider>
+      </Suspense>
     </>
   );
 }

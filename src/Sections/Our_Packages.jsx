@@ -2,8 +2,11 @@ import React, { useState } from 'react'
 import CustomSlider from '../PreBuildComps/CustomSlider/CustomSlider'
 import { packages_data } from '../WebData/packages'
 import '../app.css'
+import { useGlobalContext } from '../GlobalStates/GlobalState'
 
 const Our_Packages = () => {
+  const { scrwidth , setIsFormVisible } = useGlobalContext();
+
   const [showPackages , setShowPackages] = useState(packages_data.Logo)
 
   const handleShowPackages = (toShow) => {
@@ -16,17 +19,17 @@ const Our_Packages = () => {
   }
 
   return (
-    <div className='w-full text-textColor  px-4 2xl:px-72  sm:px-10    pt-24   pb-20 z-10  relative'>
-      <h1 className='text-[8rem] w-full text-center font-[900] opacity-20 absolute left-1/2 -translate-x-1/2 top-0'>Our Packages</h1>
+    <div className='w-full text-textColor  px-4 2xl:px-72  sm:px-10    md:pt-16 py-10   md:pb-20 z-10  relative'>
+      <h1 className='xl:text-[6rem] md:text-[5rem] md:block hidden w-full text-center font-[900] opacity-20 absolute left-1/2 -translate-x-1/2 top-0'>Our Packages</h1>
 
-      <h1 className='text-5xl font-bold text-center'>Our Packages</h1>
+      <h1 className='lg:text-5xl text-3xl font-bold text-center'>Our Packages</h1>
 
       <div className='w-full flex justify-center items-center gap-x-6 text-xl rounded-xl mt-8'>
         <h1 onClick={() => handleShowPackages(0)} className={`px-4 py-2 ${showPackages == packages_data.Logo ? 'bg-grayColor ' : 'bg-none border-b-2'} transition-all duration-300 cursor-pointer text-dakBlue  border-dakBlue`}>Web Design</h1>
         <h1 onClick={() => handleShowPackages(1)} className={`px-4 py-2 ${showPackages == packages_data.Ecommerce ? 'bg-grayColor ' : 'bg-none border-b-2'} transition-all duration-300 cursor-pointer text-dakBlue  border-dakBlue`}>Ecommerce</h1>
       </div>
 
-      <div className='bg-grayColor py-8 mt-6'>
+      <div className='md:bg-grayColor py-8 mt-6 cursor-grab'>
         <CustomSlider>
           {showPackages.map((item, idx) => (
             <div data-aos-once="false" data-aos="zoom-in" key={idx} className='md:w-[33%] sm:w-[45%] w-full p-4 text-white bg-dakBlue transition-all'>
@@ -50,7 +53,7 @@ const Our_Packages = () => {
               </div>
 
               <div className='w-full flex justify-center mt-6'>
-              <button className='px-4   py-2 rounded-full bg-lightBlue font-semibold'>Get Quote</button>
+              <button onClick={() => setIsFormVisible(true)} className='px-4 uppercase  py-2 rounded-full bg-lightBlue font-semibold'>Get Quote</button>
               </div>
 
             </div>

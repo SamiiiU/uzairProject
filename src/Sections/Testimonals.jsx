@@ -24,18 +24,18 @@ const Testimonals = () => {
   }, []);
 
   return (
-    <div className='w-full text-textColor px-4 2xl:px-72 xl:px-40 sm:px-20 pt-24 pb-20 relative'>
-      <h1 className='text-[8rem] w-full text-center font-[900] text-[#e6e6e6] z-10 absolute left-1/2 -translate-x-1/2 top-0'>
+    <div className='w-full text-textColor px-4 2xl:px-72 xl:px-40 sm:px-20 pt-16 pb-20 relative'>
+      <h1 className='xl:text-[6rem] md:text-[5rem] md:block hidden w-full text-center font-[900] opacity-20 absolute left-1/2 -translate-x-1/2 top-0'>
         Our Client Say
       </h1>
 
-      <h1 className='text-[4rem] font-bold text-center z-50 relative'>
+      <h1 className='lg:text-5xl text-3xl font-bold text-center'>
         Our Client Say
       </h1>
 
       <div
         key={index} // 💥 Force re-render on testimonial change
-        className='w-full bg-white px-10 gap-10 h-96 flex justify-center items-center my-12 rounded-3xl'
+        className='w-full bg-white px-10 gap-10 lg:h-96 py-10 flex lg:flex-row flex-col justify-center items-center my-12 rounded-3xl'
         style={{ boxShadow: '0px 0px 30px rgba(0, 0, 0, 0.2)' }}
       >
         <div
@@ -47,7 +47,7 @@ const Testimonals = () => {
           }}
         ></div>
 
-        <div key={index} className='flex-1  text-xl flex justify-center items-start gap-y-6 flex-col'>
+        <div key={index} className='flex-1   flex justify-center items-start gap-y-6 flex-col'>
           <p className='animate-fade-up'>{showReview.review}</p>
 
           <span className='animate-fade-up flex gap-x-4 items-center'>
