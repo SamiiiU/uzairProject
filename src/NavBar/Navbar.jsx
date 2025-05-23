@@ -51,8 +51,8 @@ const Navbar = () => {
         )}
 
         {/* 🔹 Contact Info */}
-        <span className="flex font-semibold items-center"><IoMdCall /> : +1 234 23144212</span>
-        <span className='flex items-center gap-x-2 font-semibold rounded-full border-[1px] border-white bg-lightBlue px-4 py-2'>
+        <span className="flex font-semibold items-center"><IoMdCall /> :+1 234 23144212</span>
+        <span className='flex items-center gap-x-2 font-semibold rounded-full border-[1px] border-white bg-lightBlue md:px-4 py-2'>
           <IoChatbubble /> Live Chat
         </span>
       </div>
