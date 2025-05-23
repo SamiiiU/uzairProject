@@ -8,23 +8,23 @@ const Hero = () => {
 
     const [step, setStep] = useState(1);
 
-    const { scrwidth, setIsFormVisible } = useGlobalContext();
+    const { scrwidth, setIsFormVisible , scrollToSection } = useGlobalContext();
 
     return (
 
-        <div style={{ backgroundImage: `url(${heroBG})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} className='w-full  h-auto bg-slate-400  text-white 2xl:px-80 xl:px-28 px-4 sm:px-20    lg:pt-48 pt-72  pb-20 z-10 flex justify-between flex-col lg:flex-row gap-10  relative'>
+        <div style={{ backgroundImage: `url(${heroBG})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} className='w-full  h-auto bg-slate-400  text-white 2xl:px-80 xl:px-28 px-4 sm:px-20    lg:pt-48 sm:pt-72 pt-60  pb-20 z-10 flex justify-between flex-col lg:flex-row gap-10  relative'>
 
 
             {/* Home text  */}
             <div data-aos="fade-in" className='lg:w-1/2 w-full lg:items-start md:items-center md:px-0 sm:px-10 px-4 space-y-4 '>
 
 
-                <h1 className=' font-[400]   sm:text-5xl text-4xl '>
+                <h1 className=' font-[400]   lg:text-5xl md:text-3xl text-3xl  '>
                     Get Your Website Designed & Claim a <br />
                     <strong>Free Logo for Just $199!</strong>
                     <span className='text-2xl mx-4'>(Originally $796)</span>
                 </h1>
-                <div className='spac-y-2 text-2xl'>
+                <div className='spac-y-2 sm:text-2xl'>
                     <h1 className='flex gap-x-4 '><span className='text-lightBlue font-[800] -translate-y-2'>__</span>Interactive UI/UX Design</h1>
 
                     <h1 className='flex gap-x-4 '><span className='text-lightBlue font-[800] -translate-y-2'>__</span>Mobile & SEO Friendly Website</h1>
@@ -35,9 +35,9 @@ const Hero = () => {
 
                 </div>
 
-                <div className=' flex md:flex-row flex-col sm:rounded-md gap-4 md:w-auto w-full   '>
-                    <button onClick={() => setIsFormVisible(true)} className=' px-10 py-4 hover:-translate-y-3 font-bold cursor-pointer transition-all duration-300 border-[1px] border-white bg-lightBlue text-center rounded-full '> Avail 75% Discount</button>
-                    <button className='px-10 py-4 hover:-translate-y-3 font-bold cursor-pointer transition-all duration-300 border-[1px] border-white bg-lightBlue text-center rounded-full'>View Packages</button>
+                <div className=' flex   gap-4 md:w-auto w-full   '>
+                    <span onClick={() => setIsFormVisible(true)} className=' sm:px-10 px-3 sm:py-4 py-2 hover:-translate-y-3 font-bold cursor-pointer transition-all duration-300 border-[1px] border-white bg-lightBlue text-center rounded-full '> Avail 75% Discount</span>
+                    <span onClick={() => scrollToSection("Packages")} className='sm:px-10 px-3 sm:py-4 py-2 hover:-translate-y-3 font-bold cursor-pointer transition-all duration-300 border-[1px] border-white bg-lightBlue text-center rounded-full'>View Packages</span>
                 </div>
 
                 <img src={heroTrust} alt="TrustPilot" className='w-auto h-7' />
@@ -46,8 +46,8 @@ const Hero = () => {
             <div className=' lg:w-1/2 w-full   sm:px-10 ' >
 
                 <div data-aos="fade-in" className='w-full bg-lightBlue shadow-[0_0_20px_2px_#4fa1ad]  px-4 py-8 rounded-2xl text-center'>
-                    <h1 className='text-4xl font-bold'>Get <span className='text-dakBlue'>75%</span> Discount</h1>
-                    <h1 className='text-2xl font-semibold'>Limited Time Offer</h1>
+                    <h1 className='md:text-4xl text-2xl font-bold'>Get <span className='text-dakBlue'>75%</span> Discount</h1>
+                    <h1 className='md:text-2xl font-semibold'>Limited Time Offer</h1>
 
                     {step == 1 && (
                         <div className='space-y-4 mt-6 w-full '>

@@ -24,7 +24,7 @@ const Our_Packages = () => {
 
       <h1 className='lg:text-5xl text-3xl font-bold text-center'>Our Packages</h1>
 
-      <div className='w-full flex justify-center items-center gap-x-6 text-xl rounded-xl mt-8'>
+      <div className='w-full flex justify-center items-center gap-x-6 md:text-xl  rounded-xl mt-8'>
         <h1 onClick={() => handleShowPackages(0)} className={`px-4 py-2 ${showPackages == packages_data.Logo ? 'bg-grayColor ' : 'bg-none border-b-2'} transition-all duration-300 cursor-pointer text-dakBlue  border-dakBlue`}>Web Design</h1>
         <h1 onClick={() => handleShowPackages(1)} className={`px-4 py-2 ${showPackages == packages_data.Ecommerce ? 'bg-grayColor ' : 'bg-none border-b-2'} transition-all duration-300 cursor-pointer text-dakBlue  border-dakBlue`}>Ecommerce</h1>
       </div>
@@ -33,11 +33,11 @@ const Our_Packages = () => {
         <CustomSlider>
           {showPackages.map((item, idx) => (
             <div data-aos-once="false" data-aos="zoom-in" key={idx} className='md:w-[33%] sm:w-[45%] w-full p-4 text-white bg-dakBlue transition-all'>
-              <h1 className='bg-lightBlue py-4 px-2 w-full text-center font-bold text-2xl'>{item.title}</h1>
+              <h1 className='bg-lightBlue py-4 px-2 w-full text-center font-bold sm:text-xl'>{item.title}</h1>
 
-              <div className='w-full flex justify-evenly items-start py-6 relative my-6'>
-                <p className='absolute top-0 left-0 text-2xl '>Now</p>
-                <h1 className='text-5xl font-[900]'>${item.price}</h1>
+              <div className='w-full flex justify-evenly items-start py-6 relative my-3'>
+                <p className='absolute top-0 left-0  font-semibold'>Now</p>
+                <h1 className='text-5xl font-bold'>${item.price}</h1>
                 <span className='flex flex-col'>
                   <p className='text-xl font-semibold line-through'>${item.was}</p>
                   Was

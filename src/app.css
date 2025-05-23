@@ -33,6 +33,13 @@
   
   }
 
- 
+  input ,select, button ,textarea{
+    outline: none;
+    border: none;
+}
+
+ button {
+  font-size: 14px;
+ }
 
   /* this is all for a custom scroll bar  */

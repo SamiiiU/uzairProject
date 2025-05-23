@@ -1,6 +1,7 @@
 import React from 'react'
 import hero2Img from '../Assets/hero2.webp'
 import { useGlobalContext } from '../GlobalStates/GlobalState';
+import '../app.css'
 
 const Hero_two = () => {
     const { scrwidth , setIsFormVisible } = useGlobalContext();
@@ -10,11 +11,11 @@ const Hero_two = () => {
             <div data-aos="fade-in" className='lg:w-1/2 w-full  lg:items-start md:items-center md:px-0 sm:px-10 px-4 space-y-4 items-start'>
 
 
-                <h1 className=' font-[800]    text-lightBlue'>
+                <h1 className=' font-semibold    text-lightBlue'>
                     About Us
                 </h1>
 
-                <h1 className='font-[900] text-5xl' >
+                <h1 className='font-bold md:text-5xl text-2xl' >
                 In A Digital World Where Attention Is Scarce.
                 </h1>
 
