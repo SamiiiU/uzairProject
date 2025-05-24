@@ -334,24 +334,24 @@ export const packages_data = {
 export const web_work = [
     {
         title: 'Landing Pages', description: 'Attract and convert potential customers with high-converting landing pages designed for specific campaigns or products',
-        image: 'https://texasdesignexperts.com/wp-content/uploads/2025/03/services1.webp'
+        image: 'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069321/s7eazqtfkf2jpqn0bboa.webp'
     },
     {
         title: 'Business Website', description: 'Showcase your brand with user friendly website that reflects your businesses values and goals',
-        image: 'https://texasdesignexperts.com/wp-content/uploads/2025/03/services2.webp'
+        image: 'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069321/ptouybs3nmrcqzp8lwoj.webp'
     },
     {
         title: 'E-commerce Website', description: 'Create an online store that provides a smooth shopping experience, secure transactions, and drives conversions.',
-        image: 'https://texasdesignexperts.com/wp-content/uploads/2025/03/services4.webp'
+        image: 'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069321/one4s8pprmfstevkfxnw.webp'
     },
     {
         title: 'Blogs & Content Website', description: 'Build a content-rich website that engages visitors, ranks well on search engines, and keeps your audience coming back.',
-        image: 'https://texasdesignexperts.com/wp-content/uploads/2025/03/services3-600x450.webp'
+        image: 'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069321/ppvnidffxz29c0t9kwls.webp'
     },
 
     {
         title: 'Custom Website Application', description: 'Tailored web apps that meet the unique needs of your business, ensuring smooth functionality and scalability.',
-        image: 'https://texasdesignexperts.com/wp-content/uploads/2025/03/services5.webp'
+        image: 'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069321/besp6gnhy1jyzxxq33lo.webp'
     },
 ]
 
@@ -377,4 +377,85 @@ export const testimonals = [
         image: 'https://texasdesignexperts.com/wp-content/uploads/2025/04/1663239322830-600x400.jpeg',
 
     }
+]
+
+export const our_work_data = [
+    {category : "All" , images : [
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069747/gg4ztmayea4xdsrgumcl.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069763/zkzln8dsv3c4vj6y0njt.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069767/f2bzgs6sq5zlhxw5wxzu.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069767/wm7jhcet4elp1dlz4ymb.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069761/fw9eyfs2qkjsvowcygqy.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069741/oklmcpnvnzrzezpg4uzv.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069739/dmjat3q3c3xg0i13qxw2.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069740/fjemowh9kwua9gxl6su5.webp'
+    ]},
+
+    {category : "Auto" , images : [
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069747/gg4ztmayea4xdsrgumcl.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069763/zkzln8dsv3c4vj6y0njt.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069767/f2bzgs6sq5zlhxw5wxzu.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069767/wm7jhcet4elp1dlz4ymb.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069761/fw9eyfs2qkjsvowcygqy.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069741/oklmcpnvnzrzezpg4uzv.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069739/dmjat3q3c3xg0i13qxw2.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069740/fjemowh9kwua9gxl6su5.webp'
+    ]},
+
+    {category : "Business" , images : [
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069747/gg4ztmayea4xdsrgumcl.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069763/zkzln8dsv3c4vj6y0njt.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069767/f2bzgs6sq5zlhxw5wxzu.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069767/wm7jhcet4elp1dlz4ymb.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069761/fw9eyfs2qkjsvowcygqy.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069741/oklmcpnvnzrzezpg4uzv.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069739/dmjat3q3c3xg0i13qxw2.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069740/fjemowh9kwua9gxl6su5.webp'
+    ]},
+
+    {category : "Custom" , images : [
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069747/gg4ztmayea4xdsrgumcl.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069763/zkzln8dsv3c4vj6y0njt.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069767/f2bzgs6sq5zlhxw5wxzu.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069767/wm7jhcet4elp1dlz4ymb.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069761/fw9eyfs2qkjsvowcygqy.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069741/oklmcpnvnzrzezpg4uzv.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069739/dmjat3q3c3xg0i13qxw2.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069740/fjemowh9kwua9gxl6su5.webp'
+    ]},
+
+    {category : "Food" , images : [
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069747/gg4ztmayea4xdsrgumcl.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069763/zkzln8dsv3c4vj6y0njt.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069767/f2bzgs6sq5zlhxw5wxzu.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069767/wm7jhcet4elp1dlz4ymb.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069761/fw9eyfs2qkjsvowcygqy.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069741/oklmcpnvnzrzezpg4uzv.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069739/dmjat3q3c3xg0i13qxw2.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069740/fjemowh9kwua9gxl6su5.webp'
+    ]},
+
+    {category : "E-commerce Store" , images : [
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069747/gg4ztmayea4xdsrgumcl.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069763/zkzln8dsv3c4vj6y0njt.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069767/f2bzgs6sq5zlhxw5wxzu.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069767/wm7jhcet4elp1dlz4ymb.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069761/fw9eyfs2qkjsvowcygqy.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069741/oklmcpnvnzrzezpg4uzv.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069739/dmjat3q3c3xg0i13qxw2.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069740/fjemowh9kwua9gxl6su5.webp'
+    ]},
+
+    {category : "Personal" , images : [
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069747/gg4ztmayea4xdsrgumcl.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069763/zkzln8dsv3c4vj6y0njt.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069767/f2bzgs6sq5zlhxw5wxzu.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069767/wm7jhcet4elp1dlz4ymb.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069761/fw9eyfs2qkjsvowcygqy.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069741/oklmcpnvnzrzezpg4uzv.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069739/dmjat3q3c3xg0i13qxw2.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069740/fjemowh9kwua9gxl6su5.webp'
+    ]},
+
+    
 ]

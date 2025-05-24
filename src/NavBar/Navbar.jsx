@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <div className='fixed top-0 left-0 z-50'>
       {/* 🔵 Top strip with CTA */}
-      <div className='w-screen bg-lightBlue z-20 2xl:px-80 lg:px-40 xl:px-28 sm:px-20 xs:px-10 px-4 flex lg:flex-row flex-col sm:gap-4 gap-2 text-white justify-between sm:items-center py-[5px] relative'>
+      <div className='w-screen bg-lightBlue z-20 2xl:px-80 sm:px-20   xs:px-10 px-4 flex lg:flex-row flex-col sm:gap-4 gap-2 text-white justify-between sm:items-center py-[5px] relative'>
         <h1 className='font-bold'>Limited Time Offer - Activate Your 75% Off Coupon!</h1>
         <div className='lg:w-auto w-full flex sm:flex-row flex-col sm:gap-20 gap-2 justify-between sm:items-center items-start'>
           <h1 onClick={() => setIsFormVisible(true)} className='underline font-semibold cursor-pointer'>Activate Your Coupon Now</h1>
@@ -34,7 +34,7 @@ const Navbar = () => {
       </div>
 
       {/* 🔵 Main navbar */}
-      <div className='w-full z-10 bg-dakBlue text-white py-2 flex justify-between 2xl:px-80 lg:px-40 sm:px-20 xs:px-10 px-4 items-center relative'>
+      <div className='w-full z-10 bg-dakBlue text-white py-2 flex justify-between 2xl:px-80 sm:px-20 xs:px-10 px-4 items-center relative'>
         {/* 🔹 Logo */}
         <span className='rounded-full overflow-hidden'>
           <img src={logo} alt="TexasDesigns" className='sm:w-20 w-16 sm:h-20 h-16' />

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { testimonals } from '../WebData/packages'
+import { testimonals } from '../WebData/allData'
 import { FaArrowRightLong } from "react-icons/fa6";
 import { initAOS } from '../Animation/AosAnimation';
 

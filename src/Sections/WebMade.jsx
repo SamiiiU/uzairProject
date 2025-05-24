@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import { packages_data } from '../WebData/packages'
+import { packages_data } from '../WebData/allData'
 import '../app.css'
 import ReusableSlider from '../PreBuildComps/HorizontalSlider.jsx/ReuseableSlider'
 import { SwiperSlide } from 'swiper/react'
-import { web_work } from '../WebData/packages'
+import { web_work } from '../WebData/allData'
 
 const WebMade = () => {
     

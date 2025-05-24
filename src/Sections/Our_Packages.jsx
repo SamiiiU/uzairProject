@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import CustomSlider from '../PreBuildComps/CustomSlider/CustomSlider'
-import { packages_data } from '../WebData/packages'
+import { packages_data } from '../WebData/allData'
 import '../app.css'
 import { useGlobalContext } from '../GlobalStates/GlobalState'
 
@@ -24,9 +24,9 @@ const Our_Packages = () => {
 
       <h1 className='lg:text-5xl text-3xl font-bold text-center'>Our Packages</h1>
 
-      <div className='w-full flex justify-center items-center gap-x-6 md:text-xl  rounded-xl mt-8'>
-        <h1 onClick={() => handleShowPackages(0)} className={`px-4 py-2 ${showPackages == packages_data.Logo ? 'bg-grayColor ' : 'bg-none border-b-2'} transition-all duration-300 cursor-pointer text-dakBlue  border-dakBlue`}>Web Design</h1>
-        <h1 onClick={() => handleShowPackages(1)} className={`px-4 py-2 ${showPackages == packages_data.Ecommerce ? 'bg-grayColor ' : 'bg-none border-b-2'} transition-all duration-300 cursor-pointer text-dakBlue  border-dakBlue`}>Ecommerce</h1>
+      <div className='w-full flex justify-center items-center gap-x-6  font-bold mt-8'>
+        <h1 onClick={() => handleShowPackages(0)} className={`px-4 py-2 ${showPackages == packages_data.Logo ? 'bg-grayColor ' : 'bg-none border-b-2'} transition-all duration-300 cursor-pointer text-dakBlue  border-dakBlue rounded-md overflow-hidden`}>Web Design</h1>
+        <h1 onClick={() => handleShowPackages(1)} className={`px-4 py-2 ${showPackages == packages_data.Ecommerce ? 'bg-grayColor ' : 'bg-none border-b-2'} transition-all duration-300 cursor-pointer text-dakBlue  border-dakBlue rounded-md overflow-hidden`}>Ecommerce</h1>
       </div>
 
       <div className='md:bg-grayColor py-8 mt-6 cursor-grab'>

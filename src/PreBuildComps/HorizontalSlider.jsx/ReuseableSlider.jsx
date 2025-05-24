@@ -4,7 +4,7 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "./slider.css"; // Create this file for custom pagination styles
-import { web_work } from "../../WebData/packages";
+import { web_work } from "../../WebData/allData";
 import { useGlobalContext } from "../../GlobalStates/GlobalState";
 
 const ReusableSlider = ({ children, MainClassName }) => {
@@ -41,7 +41,7 @@ const ReusableSlider = ({ children, MainClassName }) => {
 
 
         <div
-           key={slide} className='md:w-auto   w-full h-80 md:flex-1 animate-fade-up  rounded-3xl   transition-all  ' // here is the issue 
+           key={slide} className='md:w-[50%]   w-full h-96  animate-fade-up  rounded-3xl   transition-all  ' // here is the issue 
           style={{
             backgroundImage: `url('${slideShowing.image}')`,
             backgroundSize: 'cover',

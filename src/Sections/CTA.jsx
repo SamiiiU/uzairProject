@@ -12,9 +12,9 @@ const CTA = () => {
         <p>Get a stunning website from USA’s #1 web design service! Professional, custom website design with FREE Logo to boost your brand. Fast, affordable, and SEO-friendly website. Get started today!</p>
 
         <div className='w-full flex  justify-center items-center md:gap-6 gap-3'>
-            <button onClick={() => setIsFormVisible(true)} className='sm:px-10 px-3 sm:py-4 py-2 text-lg bg-dakBlue border-white border-[1px]  rounded-full'>Avail 75% Discount</button>
+            <button onClick={() => setIsFormVisible(true)} className='sm:px-10 px-3 sm:py-4 py-2  bg-dakBlue border-white border-[1px] font-semibold rounded-full'>Avail 75% Discount</button>
 
-            <button className='sm:px-10 px-3 sm:py-4 py-2 text-lg bg-dakBlue border-white border-[1px]  rounded-full flex  font-semibold  items-center '><IoMdCall /> : (832) 737-1637</button>
+            <button className='sm:px-10 px-3 sm:py-4 py-2 font-semibold bg-dakBlue border-white border-[1px]  rounded-full flex    items-center '><IoMdCall /> : (832) 737-1637</button>
         </div>
       
     </div>
