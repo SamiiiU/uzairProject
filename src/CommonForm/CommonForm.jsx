@@ -86,7 +86,7 @@ const CommonForm = () => {
               {/* Phone */}
               <div className="flex flex-col">
                 <label>Phone number</label>
-                <input type="text" name="user_phone" className="md:p-3 p-2 rounded-md bg-white text-black" required />
+                <input type="number" name="user_phone" className="md:p-3 p-2 rounded-md bg-white text-black" required />
               </div>
 
               {/* Company */}

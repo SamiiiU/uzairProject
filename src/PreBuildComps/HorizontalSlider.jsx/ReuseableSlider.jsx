@@ -1,8 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/pagination";
+
 import "./slider.css"; // Create this file for custom pagination styles
 import { web_work } from "../../WebData/allData";
 import { useGlobalContext } from "../../GlobalStates/GlobalState";
@@ -41,7 +38,7 @@ const ReusableSlider = ({ children, MainClassName }) => {
 
 
         <div
-           key={slide} className='md:w-[50%]   w-full h-96  animate-fade-up  rounded-3xl   transition-all  ' // here is the issue 
+            className='md:w-[50%]   w-full h-96  animate-fade-up  rounded-3xl   transition-all  ' // here is the issue 
           style={{
             backgroundImage: `url('${slideShowing.image}')`,
             backgroundSize: 'cover',
@@ -49,7 +46,7 @@ const ReusableSlider = ({ children, MainClassName }) => {
           }}
         ></div>
 
-        <div key={slide} className="md:flex-1 space-y-4 animate-fade-up  ">
+        <div  className="md:flex-1 space-y-4 animate-fade-up  ">
           <h1 className="md:text-3xl font-bold">{slideShowing.title}</h1>
           <p>{slideShowing.description}</p>
 
@@ -59,7 +56,7 @@ const ReusableSlider = ({ children, MainClassName }) => {
 
       <div className=" flex md:flex-col flex-row justify-center items-center gap-3   h-full ">
         {web_work.map((work, idx) => (
-          <span onClick={() => handleSlide(idx)} key={idx} className={` transition-all ease-in-out duration-300 origin-center rounded-full ${slide == idx ? 'md:py-4 md:px-[5px] py-[5px] px-4 bg-gray-600' : 'p-[5px] bg-grayColor'}  `}></span>
+          <span onClick={() => handleSlide(idx)} key={work.id || idx} className={` transition-all ease-in-out duration-300 origin-center rounded-full ${slide == idx ? 'md:py-4 md:px-[5px] py-[5px] px-4 bg-gray-600' : 'p-[5px] bg-grayColor'}  `}></span>
         ))}
       </div>
     </div>

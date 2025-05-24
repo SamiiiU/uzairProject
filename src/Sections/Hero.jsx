@@ -2,47 +2,82 @@ import React, { useRef, useState } from 'react'
 import heroTrust from '../Assets/heroTrust.webp'
 import heroBG from '../Assets/heroBg.png'
 import { useGlobalContext } from '../GlobalStates/GlobalState';
+import emailjs from '@emailjs/browser';
+
 
 const Hero = () => {
 
 
     const [step, setStep] = useState(1);
 
-    const {  scrollToSection ,isFormVisible, setIsFormVisible , scrwidth} = useGlobalContext();
+    const { scrollToSection, isFormVisible, setIsFormVisible, scrwidth } = useGlobalContext();
     const formRef = useRef();
     const [isSending, setIsSending] = useState(false);
-  
-    const changeStep =() => {
-        
-    }
-  
-    
-  
-    const handleSubmit = (e) => {
-      e.preventDefault();
-      setIsSending(true);
-  
-      emailjs.sendForm(
-        'service_9xsr84o',         // Replace with your EmailJS service ID
-        'template_l5vzds7',        // Replace with your EmailJS template ID
-        formRef.current,
-        'KMjSwQzTT4RVy5UWU'        // Replace with your EmailJS public key
-      ).then(
-        (result) => {
-          alert('Message sent successfully!');
-          formRef.current.reset();
-          setIsFormVisible(false);
-          setIsSending(false);
-        },
-        (error) => {
-          console.error(error.text);
-          alert('Failed to send message. Please try again.');
-          formRef.current.reset();
-          setIsSending(false);
+
+    const changeStep = () => {
+        const formElements = formRef.current.elements;
+        let isValid = true;
+
+        // Check first 3 input fields only
+        for (let i = 0, filledCount = 0; i < formElements.length && filledCount < 3; i++) {
+            const el = formElements[i];
+            if (el.tagName === 'INPUT' && el.name) {
+                filledCount++;
+                if (!el.value.trim()) {
+                    isValid = false;
+                    el.focus(); // Optionally focus the first empty field
+                    break;
+                }
+            }
         }
-      );
+
+        if (!isValid) {
+            alert('Please fill in the first 3 fields.');
+            return;
+        }
+
+        // If valid, you can proceed
+        setStep(2)
+        // ...put your next-step logic here
     };
-  
+
+    const showFormDetails = () => {
+        const formElements = formRef.current.elements;
+          for (let i = 0; i < formElements.length; i++) {
+            const el = formElements[i];
+            if (el.name) {
+              console.log(`${el.name}: ${el.value}`);
+            }
+        }
+      }
+
+
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setIsSending(true);
+
+        emailjs.sendForm(
+            'service_9xsr84o',         // Replace with your EmailJS service ID
+            'template_l5vzds7',        // Replace with your EmailJS template ID
+            formRef.current,
+            'KMjSwQzTT4RVy5UWU'        // Replace with your EmailJS public key
+        ).then(
+            (result) => {
+                alert('Message sent successfully!');
+                formRef.current.reset();
+                setIsFormVisible(false);
+                setIsSending(false);
+            },
+            (error) => {
+                console.error(error.text);
+                alert('Failed to send message. Please try again.');
+                formRef.current.reset();
+                setIsSending(false);
+            }
+        );
+    };
+
 
     return (
 
@@ -70,8 +105,8 @@ const Hero = () => {
                 </div>
 
                 <div className=' flex   gap-4 md:w-auto w-full   '>
-                    <span onClick={() => setIsFormVisible(true)} className='md:text-sm text-xs  sm:px-10 px-3 sm:py-4 py-2 hover:-translate-y-3 font-bold cursor-pointer transition-all duration-300 border-[1px] border-white bg-lightBlue text-center rounded-full '> Avail 75% Discount</span>
-                    <span onClick={() => scrollToSection("Packages")} className='md:text-sm text-xs sm:px-10 px-3 sm:py-4 py-2 hover:-translate-y-3 font-bold cursor-pointer transition-all duration-300 border-[1px] border-white bg-lightBlue text-center rounded-full'>View Packages</span>
+                    <span onClick={() => setIsFormVisible(true)} className=' text-xs  sm:px-10 px-3 sm:py-4 py-2 hover:-translate-y-3 font-bold cursor-pointer transition-all duration-300   bg-lightBlue text-center rounded-full '> Avail 75% Discount</span>
+                    <span onClick={() => scrollToSection("Packages")} className=' text-xs sm:px-10 px-3 sm:py-4 py-2 hover:-translate-y-3 font-bold cursor-pointer transition-all duration-300 border-[1px] border-white bg-lightBlue text-center rounded-full'>View Packages</span>
                 </div>
 
                 <img src={heroTrust} alt="TrustPilot" className='w-auto h-7' />
@@ -79,44 +114,63 @@ const Hero = () => {
 
             <div className=' lg:w-1/2 w-full   sm:px-10 ' >
 
-                <div data-aos="fade-in" className='w-full bg-lightBlue shadow-[0_0_20px_2px_#4fa1ad]  px-4 py-8 rounded-2xl text-center'>
+                <div data-aos="fade-in" className='w-full bg-lightBlue shadow-[0_0_20px_2px_#4fa1ad]  px-4 py-8 rounded-2xl text-center h-fit'>
                     <h1 className='md:text-4xl text-2xl font-bold'>Get <span className='text-dakBlue'>75%</span> Discount</h1>
                     <h1 className='md:text-2xl font-semibold'>Limited Time Offer</h1>
-                    
-                    <form  ref={formRef} onSubmit={handleSubmit}>
-                    {step == 1 && (
-                        <div className='space-y-4 mt-6 w-full '>
-                            <div className='w-full grid md:grid-cols-2 grid-cols-1 gap-3 '>
-                                <input type='text' placeholder='Full Name*' className='md:text-sm text-xs sm:flex-1 p-2 border-none outline-none bg-inputBoxColor rounded-xl col-span-1' />
 
-                                <input type='text' placeholder='Email Address*' className='md:text-sm text-xs sm:flex-1 p-2  outline-none bg-inputBoxColor rounded-xl col-span-1' />
+                    <form ref={formRef} onSubmit={handleSubmit} className='my-6 space-y-4  w-full h-fit'>
+                        {step == 1 && (
+                            <>
+                                <div className='w-full grid md:grid-cols-2 grid-cols-1 gap-3 '>
+                                    <input type="text" name="user_name" placeholder='Full Name*' className='md:text-sm text-xs sm:flex-1 p-2 border-none outline-none bg-inputBoxColor rounded-xl col-span-1' required/>
+
+                                    <input type="email" name="user_email" placeholder='Email Address*' className='md:text-sm text-xs sm:flex-1 p-2  outline-none bg-inputBoxColor rounded-xl col-span-1' required/>
+                                </div>
+
+                                <input type="number" name="user_phone" placeholder='Phone No*' className='md:text-sm text-xs bg-inputBoxColor w-full p-2  outline-none  rounded-xl' required/>
+
+                                <textarea name="message" placeholder='To help us understand better, enter brief description about your project' className='md:text-sm text-xs w-full p-2 border-none outline-none bg-inputBoxColor rounded-xl mb-6' required/>
+                            </>
+                        )}
+
+                        {step == 2 && (
+                            <div className=' mt-6 w-full flex flex-col gap-4'>
+                                {/* Company */}
+                                    <select name="user_budget" className="md:p-3 p-2 rounded-xl  text-white md:text-sm text-xs bg-inputBoxColor" required>
+                                        <option>Under $500</option>
+                                        <option>$500 - $1,000</option>
+                                        <option>$1,000 - $5,000</option>
+                                        <option>$5,000+</option>
+                                    </select>
+                               
+
+                                {/* Service */}
+                                    <select name="user_service" className="md:p-3 p-2 rounded-md text-white md:text-sm text-xs bg-inputBoxColor " required>
+                                        <option>Website</option>
+                                        <option>Mobile App</option>
+                                        <option>SEO</option>
+                                    </select>
+                                
+
+                                {/* Website Type */}
+                                    <select name="user_website_type" className="md:p-3 p-2 rounded-md text-white md:text-sm text-xs bg-inputBoxColor " required>
+                                        <option>Business Website</option>
+                                        <option>E-commerce</option>
+                                        <option>Portfolio</option>
+                                    </select>
+
+                                    <input placeholder='your company website / url' type="text" name="user_company" className="md:p-3 p-2 rounded-xl  text-white md:text-sm text-xs bg-inputBoxColor" required />
+                                
+
                             </div>
 
-                            <input type='number' placeholder='Phone No*' className='md:text-sm text-xs w-full p-2  outline-none bg-inputBoxColor rounded-xl' />
-
-                            <textarea placeholder='To help us understand better, enter brief description about your project' className='md:text-sm text-xs w-full p-2 border-none outline-none bg-inputBoxColor rounded-xl ' />
-
-                            <span onClick={() => changeStep()} className='md:text-sm text-xs px-10 py-2 rounded-full font-semibold bg-white text-dakBlue '> Claim free consultant</span>
-                        </div>
-                    )}
-
-                    {step == 2 && (
-                        <div className='space-y-4 mt-6 w-full '>
-                            <div className='w-full grid md:grid-cols-2 grid-cols-1 gap-3 '>
-                                <input type='text' placeholder='Full Name*' className='sm:flex-1 p-2 border-none outline-none bg-inputBoxColor rounded-xl col-span-1' />
-
-                                <input type='text' placeholder='Email Address*' className='sm:flex-1 p-2  outline-none bg-inputBoxColor rounded-xl col-span-1' />
-                            </div>
-
-                            <input type='number' placeholder='Phone No*' className='w-full p-2  outline-none bg-inputBoxColor rounded-xl' />
-
-                            <textarea placeholder='To help us understand better, enter brief description about your project' className='w-full p-2 border-none outline-none bg-inputBoxColor rounded-xl ' />
-
-                            <button type="submit" className='px-10 py-2 rounded-full font-semibold bg-white text-dakBlue '> Claim free consultant</button>
-                        </div>
-                    )}
+                        )}
+                        {step == 2 && (<button type="submit" onClick={() => showFormDetails()} className='px-10 py-2 rounded-full font-semibold bg-white text-dakBlue mt-6'> Active Your Coupan Now</button>)}
 
                     </form>
+                        {step == 1 && (
+                            <button onClick={() => changeStep()} className='px-10 py-2 rounded-full font-semibold bg-white text-dakBlue '> Claim free consultant</button>
+                        )}
                     <p className='font-semibold mt-5 md:text-sm text-xs'>Any Confusion? Why Not Discuss Your Idea?</p>
                 </div>
 
