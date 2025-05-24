@@ -27,7 +27,6 @@ const Our_work = () => {
 
       <div className='w-full bg-grayColor md:h-[400px] h-[500px] grid md:grid-cols-4 md:grid-rows-2 grid-rows-4 grid-cols-2 gap-4 p-6'>
         {our_work_data[tabNum].images.slice(0, 8).map((image, index) => (
-          // <img key={index} src={image} alt={`work-${index}`} className="col-span-1 row-span-1" />
           <span key={index} className='col-span-1 row-span-1 ' style={{
             backgroundImage : `url(${image})` ,
             backgroundSize: 'cover',

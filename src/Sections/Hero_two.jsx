@@ -1,5 +1,4 @@
 import React from 'react'
-import hero2Img from '../Assets/hero2.webp'
 import { useGlobalContext } from '../GlobalStates/GlobalState';
 import '../app.css'
 
@@ -26,7 +25,7 @@ const Hero_two = () => {
 
             <div data-aos="fade-in" className=' lg:w-1/2 w-full flex justify-center sm:px-10 px-4' >
 
-               <img src={hero2Img} alt="About" className='sm:w-[80%] sm:h-96 w-fit h-60'/>
+               <img src={'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748003888/fspf9ja8kqrnjegbxunw.webp'} alt="About" className='sm:w-full sm:h-96 w-fit h-60'/>
             </div>
         </div>
     )

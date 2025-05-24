@@ -392,25 +392,20 @@ export const our_work_data = [
     ]},
 
     {category : "Auto" , images : [
-        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069747/gg4ztmayea4xdsrgumcl.webp',
-        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069763/zkzln8dsv3c4vj6y0njt.webp',
-        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069767/f2bzgs6sq5zlhxw5wxzu.webp',
-        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069767/wm7jhcet4elp1dlz4ymb.webp',
-        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069761/fw9eyfs2qkjsvowcygqy.webp',
-        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069741/oklmcpnvnzrzezpg4uzv.webp',
-        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069739/dmjat3q3c3xg0i13qxw2.webp',
-        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069740/fjemowh9kwua9gxl6su5.webp'
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748073485/euwf0sk7trjefbtbgzo9.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748073494/eysfgjtbqqlwexuozkie.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748073493/wuxdwbw5mw0hqzqbjibp.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748073491/q6mzl3xlsucevj4olgyj.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748073489/cfd3jwrhp1ht8cdjplt8.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748073487/lmkcifu0zeomxamtcptv.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748073483/qc9mn8o7bhel7r26yvca.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748073481/rhhwsquva1jjwqvaz0ca.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748073472/klmclfbk3nlvjjsol6c2.webp',
+        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748073471/ulkd30rmjdvdsbhcphgu.webp',
     ]},
 
     {category : "Business" , images : [
-        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069747/gg4ztmayea4xdsrgumcl.webp',
-        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069763/zkzln8dsv3c4vj6y0njt.webp',
-        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069767/f2bzgs6sq5zlhxw5wxzu.webp',
-        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069767/wm7jhcet4elp1dlz4ymb.webp',
-        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069761/fw9eyfs2qkjsvowcygqy.webp',
-        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069741/oklmcpnvnzrzezpg4uzv.webp',
-        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069739/dmjat3q3c3xg0i13qxw2.webp',
-        'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069740/fjemowh9kwua9gxl6su5.webp'
+        
     ]},
 
     {category : "Custom" , images : [
