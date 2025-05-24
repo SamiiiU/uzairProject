@@ -59,7 +59,8 @@ const Navbar = () => {
 
       {scrwidth < 600  && (
         <div className='sm:px-20 z-0 xs:px-10 p-4 bg-white text-black flex flex-col gap-y-8 '
-        style={{transform : isNavVisible ? 'translateY(0)' : 'translateY(-100%)' , transition : 'all 0.5s ease-in-out'}} >
+        style={{transform : isNavVisible ? 'translateY(0) ' : 'translateY(-100%)' ,
+        visibility : isNavVisible ?  'visible' : 'collapse', transition : 'all 0.5s ease-in-out'}} >
               <h1 onClick={() => scrollToSection("Home")} className='cursor-pointer'>About Us</h1>
               <h1 onClick={() => scrollToSection("Packages")} className='cursor-pointer'>Packages</h1>
               <h1 onClick={() => scrollToSection("Work")} className='cursor-pointer'>Portfolio</h1>
