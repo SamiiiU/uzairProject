@@ -82,10 +82,10 @@ const Hero = () => {
     return (
 
         <div style={{ backgroundImage: `url(${heroBG})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} className='w-full  h-auto bg-slate-400  text-white 2xl:px-80 xl:px-28 px-4 sm:px-20    lg:pt-48 sm:pt-72 pt-60  pb-20 z-10 flex justify-between flex-col lg:flex-row gap-10  relative'>
-
+                <span className={`w-full h-full absolute top-0 z-10 left-0 ${scrwidth > 600 ?'bg-[#44757f]/50' : 'bg-[#44757f]'}`} ></span>
 
             {/* Home text  */}
-            <div data-aos="fade-in" className='lg:w-1/2 w-full lg:items-start md:items-center md:px-0 sm:px-10 px-4 space-y-4 '>
+            <div data-aos="fade-in" className='lg:w-1/2 w-full lg:items-start z-20 md:items-center md:px-0 sm:px-10 px-4 space-y-4 '>
 
 
                 <h1 className=' font-[400]   lg:text-5xl md:text-3xl text-3xl  '>
@@ -112,7 +112,7 @@ const Hero = () => {
                 <img src={heroTrust} alt="TrustPilot" className='w-auto h-7' />
             </div>
 
-            <div className=' lg:w-1/2 w-full   sm:px-10 ' >
+            <div className=' lg:w-1/2 w-full z-20  sm:px-10 ' >
 
                 <div data-aos="fade-in" className='w-full bg-lightBlue shadow-[0_0_20px_2px_#4fa1ad]  px-4 py-8 rounded-2xl text-center h-fit'>
                     <h1 className='md:text-4xl text-2xl font-bold'>Get <span className='text-dakBlue'>75%</span> Discount</h1>

@@ -17,7 +17,7 @@ const Navbar = () => {
     <div className={`fixed top-0 left-0 z-50 w-full ${isNavVisible ? '' : 'h-auto pointer-events-none'}`}>
       {/* 🔵 Top strip with CTA */}
       <div className='w-screen pointer-events-auto bg-lightBlue z-20 2xl:px-80 sm:px-20   xs:px-10 px-4 flex lg:flex-row flex-col sm:gap-4 gap-2 text-white justify-between sm:items-center py-[5px] relative'>
-        <h1 className='font-bold'>Limited Time Offer - Activate Your 75% Off Coupon!</h1>
+        <h1 className='font-bold '>Limited Time Offer - Activate Your 75% Off Coupon!</h1>
         <div className='lg:w-auto w-full flex sm:flex-row flex-col sm:gap-20 gap-2 justify-between sm:items-center items-start'>
           <h1 onClick={() => setIsFormVisible(true)} className='underline font-semibold cursor-pointer'>Activate Your Coupon Now</h1>
           <span onClick={() => setIsFormVisible(true)} className='md:text-sm text-xs font-semibold bg-dakBlue px-4 py-2 rounded-lg border-[1px] border-white cursor-pointer'>

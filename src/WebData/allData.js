@@ -357,23 +357,23 @@ export const web_work = [
 
 export const testimonals = [
     {
-        review: 'The SEO strategies that Texas Design Experts implemented were customized to fit the unique needs of our industry. Focusing on our sector’s specific requirements, they helped us achieve significant, measurable results. This approach led to increased website orders organically , increased website traffic, and better engagement, all of which were clear indicators of the strategy\'s success.',
-        nameOf: 'Emily ',
-        position: 'Recruiter',
+        review: 'What stood out the most was not only their deep understanding of our industry but also their ability to leverage that knowledge with a data-driven approach. They were able to analyze key trends, identify actionable insights, and apply data to make informed decisions that truly resonated with our business needs. It was clear that they had a comprehensive grasp of both the big picture and the finer details, which made all the difference in crafting tailored strategies for our success.',
+        nameOf: 'George brook ',
+        position: 'Direct of Board, Brush Buck Tours',
         image: 'https://texasdesignexperts.com/wp-content/uploads/2025/04/istockphoto-1552851641-612x612-1-600x400.jpg',
 
     },
     {
-        review: 'The SEO strategies that Texas Design Experts implemented were customized to fit the unique needs of our industry. Focusing on our sector’s specific requirements, they helped us achieve significant, measurable results. This approach led to increased website orders organically , increased website traffic, and better engagement, all of which were clear indicators of the strategy\'s success.',
-        nameOf: 'Uzair ',
-        position: 'Peon',
+        review: 'Their strong collaboration played a key role in making the entire process so easy. By working seamlessly together, they ensured everything moved forward without delays, milestone based tasks were delivered timely and efficiently.This smooth coordination not only sped up the process but also contributed to the overall success of the project',
+        nameOf: 'Elli Noyon',
+        position: 'Recruiter',
         image: 'https://texasdesignexperts.com/wp-content/uploads/2025/04/business-ideas-women-enterpreneurs-dubai-1024x576-1-600x338.webp',
 
     },
     {
         review: 'The SEO strategies that Texas Design Experts implemented were customized to fit the unique needs of our industry. Focusing on our sector’s specific requirements, they helped us achieve significant, measurable results. This approach led to increased website orders organically , increased website traffic, and better engagement, all of which were clear indicators of the strategy\'s success.',
-        nameOf: 'Robinson ',
-        position: 'CEO',
+        nameOf: 'Jessica Born',
+        position: 'Project Manager',
         image: 'https://texasdesignexperts.com/wp-content/uploads/2025/04/1663239322830-600x400.jpeg',
 
     }
