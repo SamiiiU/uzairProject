@@ -164,7 +164,7 @@ const Hero = () => {
 
                     </form>
                         {step == 1 && (
-                            <button onClick={() => changeStep()} className='px-10 py-2 rounded-full font-semibold bg-white text-dakBlue '> Claim free consultant</button>
+                            <button onClick={() => changeStep()} className='px-10 py-2 rounded-full font-semibold bg-white text-dakBlue '> Claim free consultation</button>
                         )}
                     <p className='font-semibold mt-5 md:text-sm text-xs'>Any Confusion? Why Not Discuss Your Idea?</p>
                 </div>

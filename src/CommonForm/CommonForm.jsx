@@ -53,7 +53,7 @@ const CommonForm = () => {
   return (
     <>
       {isFormVisible && (
-        <div className='w-full flex z-50 fixed top-0 py-4 px-4 overflow-y-scroll h-screen left-0 justify-center 2xl:items-center items-start  text-white bg-black/50 overflow-x-hidden'>
+        <div className='w-full flex z-50 fixed top-0 py-4 sm:px-4 px-2 overflow-y-scroll h-screen left-0 justify-center 2xl:items-center items-start  text-white bg-black/50 overflow-x-hidden'>
           
           {scrwidth < 800 && 
           <span onClick={() => setIsFormVisible(false)} className='absolute z-50 top-0 right-0 p-2 text-2xl cursor-pointer'>
