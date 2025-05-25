@@ -81,7 +81,7 @@ const Hero = () => {
 
     return (
 
-        <div style={{ backgroundImage: `url(${heroBG})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} className='w-full  h-auto bg-slate-400  text-white 2xl:px-80 xl:px-28 px-4 sm:px-20    lg:pt-48 sm:pt-72 pt-60  pb-20 z-10 flex justify-between flex-col lg:flex-row gap-10  relative'>
+        <div style={{ backgroundImage: `url(${heroBG})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} className='w-full  h-auto bg-slate-400  text-white 2xl:px-80 xl:px-28 px-2 sm:px-20    lg:pt-48 sm:pt-72 pt-60  pb-20 z-10 flex justify-between flex-col lg:flex-row gap-10  relative'>
                 <span className={`w-full h-full absolute top-0 z-10 left-0 ${scrwidth > 600 ?'bg-[#44757f]/50' : 'bg-[#44757f]'}`} ></span>
 
             {/* Home text  */}
@@ -105,8 +105,8 @@ const Hero = () => {
                 </div>
 
                 <div className=' flex   gap-4 md:w-auto w-full   '>
-                    <span onClick={() => setIsFormVisible(true)} className=' text-xs  sm:px-10 px-3 sm:py-4 py-2 hover:-translate-y-3 font-bold cursor-pointer transition-all duration-300   bg-lightBlue text-center rounded-full '> Avail 75% Discount</span>
-                    <span onClick={() => scrollToSection("Packages")} className=' text-xs sm:px-10 px-3 sm:py-4 py-2 hover:-translate-y-3 font-bold cursor-pointer transition-all duration-300 border-[1px] border-white bg-lightBlue text-center rounded-full'>View Packages</span>
+                    <span onClick={() => setIsFormVisible(true)} className='md:text-sm text-xs  sm:px-10 px-3 sm:py-4 py-2 hover:-translate-y-3 font-bold cursor-pointer transition-all duration-300   bg-lightBlue text-center rounded-full '> Avail 75% Discount</span>
+                    <span onClick={() => scrollToSection("Packages")} className='md:text-sm text-xs sm:px-10 px-3 sm:py-4 py-2 hover:-translate-y-3 font-bold cursor-pointer transition-all duration-300 border-[1px] border-white bg-lightBlue text-center rounded-full'>View Packages</span>
                 </div>
 
                 <img src={heroTrust} alt="TrustPilot" className='w-auto h-7' />

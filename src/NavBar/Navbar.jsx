@@ -92,7 +92,7 @@ const Navbar = () => {
         )}
 
         {/* 🔹 Contact Info */}
-        <a href="tel:8327371637" className="flex font-semibold items-center md:text-sm text-xs"><IoMdCall /> : +1 832 737-1637</a>
+        <a href="tel:+18327371637" className="flex font-semibold items-center md:text-sm text-xs"><IoMdCall /> : +1 832 737-1637</a>
         <span onClick={() => window.Tawk_API?.maximize()} className='cursor-pointer flex md:text-sm text-xs items-center gap-x-2 font-semibold rounded-full border-[1px] border-white bg-lightBlue md:px-4 py-2 px-2'>
           <IoChatbubble /> Live Chat
         </span>
