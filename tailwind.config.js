@@ -38,6 +38,10 @@ module.exports = {
         '0%': { opacity: '0', transform: 'translateX(20px)' },
         '100%': { opacity: '1', transform: 'translateX(0)' },
       },
+      blink: {
+        '0%, 100%': { color: 'white' },
+        '50%': { color: '#4fa1ad' },
+      },
     },
     animation: {
       'fade-in': 'fade-in 0.8s ease-out',
@@ -45,6 +49,7 @@ module.exports = {
       'fade-down': 'fade-down 0.8s ease-out',
       'fade-left': 'fade-left 0.8s ease-out',
       'fade-right': 'fade-right 0.8s ease-out',
+      'blink': 'blink 1.5s infinite',
     },
   },
   plugins: [],

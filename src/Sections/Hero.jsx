@@ -90,7 +90,7 @@ const Hero = () => {
 
                 <h1 className=' font-[400]   lg:text-5xl md:text-3xl text-3xl  '>
                     Get Your Website Designed & Claim a <br />
-                    <strong>Free Logo for Just $199!</strong>
+                    <strong className='animate-blink'>Free Logo for Just $199!</strong>
                     <span className='text-2xl mx-4'>(Originally $796)</span>
                 </h1>
                 <div className='spac-y-2 sm:text-2xl'>
@@ -119,8 +119,7 @@ const Hero = () => {
                     <h1 className='md:text-2xl font-semibold'>Limited Time Offer</h1>
 
                     <form ref={formRef} onSubmit={handleSubmit} className='my-6 space-y-4  w-full h-fit'>
-                        {step == 1 && (
-                            <>
+                        <div className={`${step == 1 ? 'block' : 'hidden'} space-y-4`}>
                                 <div className='w-full grid md:grid-cols-2 grid-cols-1 gap-3 '>
                                     <input type="text" name="user_name" placeholder='Full Name*' className='md:text-sm text-xs sm:flex-1 p-2 border-none outline-none bg-inputBoxColor rounded-xl col-span-1' required/>
 
@@ -130,11 +129,9 @@ const Hero = () => {
                                 <input type="number" name="user_phone" placeholder='Phone No*' className='md:text-sm text-xs bg-inputBoxColor w-full p-2  outline-none  rounded-xl' required/>
 
                                 <textarea name="message" placeholder='To help us understand better, enter brief description about your project' className='md:text-sm text-xs w-full p-2 border-none outline-none bg-inputBoxColor rounded-xl mb-6' required/>
-                            </>
-                        )}
+                            </div>
 
-                        {step == 2 && (
-                            <div className=' mt-6 w-full flex flex-col gap-4'>
+                            <div className={`${step == 2 ? 'block' : 'hidden'} mt-6 w-full flex flex-col gap-4`}>
                                 {/* Company */}
                                     <select name="user_budget" className="md:p-3 p-2 rounded-xl  text-white md:text-sm text-xs bg-inputBoxColor" required>
                                         <option>Under $500</option>
@@ -163,8 +160,6 @@ const Hero = () => {
                                 
 
                             </div>
-
-                        )}
                         {step == 2 && (<button type="submit" onClick={() => showFormDetails()} className='px-10 py-2 rounded-full font-semibold bg-white text-dakBlue mt-6'> Active Your Coupan Now</button>)}
 
                     </form>
