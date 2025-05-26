@@ -37,11 +37,10 @@ const CommonForm = () => {
       'UYoaxcSkke-Lmw0Zi'        // Replace with your EmailJS public key
     ).then(
       (result) => {
-        // alert('Message sent successfully!');
         formRef.current.reset();
         setIsFormVisible(false);
         setIsSending(false);
-        window.location.href = "https://github.com/SamiiiU/uzairProject";
+        window.location.href = "https://texasdesignexperts.com/thank-you/";
       },
       (error) => {
         console.error(error.text);
