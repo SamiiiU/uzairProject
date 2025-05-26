@@ -68,7 +68,7 @@ const Hero = () => {
                 formRef.current.reset();
                 setIsFormVisible(false);
                 setIsSending(false);
-                window.location.href = "https://texasdesignexperts.com/thank-you/";
+                window.location.href = "https://agency.texasdesignexperts.com/thank-you/";
 
             },
             (error) => {

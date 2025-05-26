@@ -25,7 +25,7 @@ const Hero_two = () => {
 
             <div data-aos="fade-in" className=' lg:w-1/2 w-full flex justify-center sm:px-10 px-4' >
 
-               <img src={'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748003888/fspf9ja8kqrnjegbxunw.webp'} alt="About" className='sm:w-full sm:h-96 w-fit h-60'/>
+               <img src={'https://res.cloudinary.com/dmwykcrki/image/upload/v1748284184/web_page_pic-01_chidek.png'} alt="About" className='sm:w-full sm:h-96 w-fit h-60'/>
             </div>
         </div>
     )
