@@ -25,14 +25,14 @@ const CustomSlider = ({children }) => {
       };
     }, []);
   const NextArrow = ({ onClick }) => (
-    <div onClick={onClick} className="absolute  hover:text-textColor text-textColor/50 -right-12 top-1/2 transform -translate-y-1/2 cursor-pointer  z-10 text-2xl p-2  ">
+    <div onClick={onClick} className="absolute  hover:text-textColor text-textColor/80 -right-10 top-1/2 transform -translate-y-1/2 cursor-pointer  z-10 text-4xl p-2  ">
       <IoIosArrowForward  />
     </div>
   );
   
   const PrevArrow = ({ onClick }) => (
-    <div onClick={onClick} className="absolute hover:text-textColor text-textColor/50 -left-12 top-1/2 transform -translate-y-1/2 cursor-pointer z-10 text-2xl p-2 ">
-      <IoIosArrowBack size={24} />
+    <div onClick={onClick} className="absolute hover:text-textColor text-textColor/80 -left-10 top-1/2 transform -translate-y-1/2 cursor-pointer z-10 text-4xl p-2 ">
+      <IoIosArrowBack  />
     </div>
   );
 
