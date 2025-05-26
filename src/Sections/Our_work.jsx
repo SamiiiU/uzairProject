@@ -1,14 +1,23 @@
 import React, { useState } from 'react'
 import { our_work_data } from '../WebData/allData'
 import '../app.css'
+import { useGlobalContext } from '../GlobalStates/GlobalState';
 
 const Our_work = () => {
+  
+  const {showImageViewer , setShowImageViewer} = useGlobalContext()
   const [showWork, setShowWork] = useState(our_work_data[0])
   const [tabNum, setTabNum] = useState(0)
+  const [imageToShow , setImageToShow] = useState(our_work_data[tabNum].images[0])
 
   const handleShowWork = (toShow) => {
     setShowWork(our_work_data[toShow])
     setTabNum(toShow)
+  }
+
+  const handleShowImage = (index) =>{
+    setImageToShow(our_work_data[tabNum].images[index])
+    setShowImageViewer(true)
   }
 
   return (
@@ -25,15 +34,16 @@ const Our_work = () => {
 
       </div>
 
-      <div className='w-full bg-grayColor md:h-[400px] h-[500px] grid md:grid-cols-4 md:grid-rows-2 grid-rows-4 grid-cols-2 gap-4 p-6'>
+      <div className='w-full bg-grayColor xl:h-[700px] md:h-[400px] h-[500px] grid md:grid-cols-4 md:grid-rows-2 grid-rows-4 grid-cols-2 gap-4 p-6'>
         {our_work_data[tabNum].images.slice(0, 8).map((image, index) => (
-          <span key={index} className='col-span-1 row-span-1 ' style={{
+          <span onDoubleClick={() => handleShowImage(index)} key={index} className='col-span-1 row-span-1 ' style={{
             backgroundImage : `url(${image})` ,
             backgroundSize: 'cover',
             backgroundPosition: 'top',
           }}></span>
         ))}
       </div>
+
     </div>
   )
 }

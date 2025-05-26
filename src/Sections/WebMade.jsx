@@ -1,22 +1,15 @@
-import React, { useState } from 'react'
-import { packages_data } from '../WebData/allData'
+import React from 'react'
 import '../app.css'
 import ReusableSlider from '../PreBuildComps/HorizontalSlider.jsx/ReuseableSlider'
-import { SwiperSlide } from 'swiper/react'
-import { web_work } from '../WebData/allData'
+
+import { useGlobalContext } from '../GlobalStates/GlobalState'
 
 const WebMade = () => {
     
-  const [showPackages , setShowPackages] = useState(packages_data.Logo)
 
-  const handleShowPackages = (toShow) => {
-    if(toShow == 0){
-      setShowPackages(packages_data.Logo)
-    }
-    else{
-      setShowPackages(packages_data.Ecommerce)
-    }
-  }
+  const { setIsFormVisible} = useGlobalContext(); 
+
+  
 
   
 
@@ -34,6 +27,10 @@ const WebMade = () => {
 
         </ReusableSlider>
         </div>
+
+        <div className='w-full flex justify-center items-center mt-6'>
+          <span onClick={() => setIsFormVisible(true)}  className='px-10 cursor-pointer py-4 rounded-full lg:text-lg font-semibold text-sm text-white bg-lightBlue'>Avail 75% Discount</span>
+      </div>
     </div>
   )
 }

@@ -13,65 +13,59 @@ const Navbar = () => {
 
 
 
-  const [showTopStrip, setShowTopStrip] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
+  // const [showTopStrip, setShowTopStrip] = useState(true);
+  // const [lastScrollY, setLastScrollY] = useState(0);
 
-  const topStripRef = useRef(null);
-  const [topStripHeight, setTopStripHeight] = useState(0);
+  // const topStripRef = useRef(null);
+  // const [topStripHeight, setTopStripHeight] = useState(0);
 
-  useEffect(() => {
-    if (topStripRef.current) {
-      setTopStripHeight(topStripRef.current.offsetHeight);
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (topStripRef.current) {
+  //     setTopStripHeight(topStripRef.current.offsetHeight);
+  //   }
+  // }, []);
   
   
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (scrwidth > 600) return; // ✅ Only run on mobile (less than 600px)
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (scrwidth > 600) return; // ✅ Only run on mobile (less than 600px)
   
-      const currentScrollY = window.scrollY;
-      if (currentScrollY > lastScrollY && currentScrollY > 50) {
-        // scrolling down
-        setShowTopStrip(false);
-      } else {
-        // scrolling up
-        setShowTopStrip(true);
-      }
-      setLastScrollY(currentScrollY);
-    };
+  //     const currentScrollY = window.scrollY;
+  //     if (currentScrollY > lastScrollY && currentScrollY > 50) {
+  //       // scrolling down
+  //       setShowTopStrip(false);
+  //     } else {
+  //       // scrolling up
+  //       setShowTopStrip(true);
+  //     }
+  //     setLastScrollY(currentScrollY);
+  //   };
   
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [lastScrollY, scrwidth]);
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, [lastScrollY, scrwidth]);
   
   return (
     <div style={{
-      transform: !showTopStrip ? `translateY(-${topStripHeight + 3}px)` : 'translateY(0px)',
-      transition : 'all 0.5s',
+
     }} className={`fixed top-0 left-0 z-50 w-full ${isNavVisible ? '' : 'h-auto pointer-events-none'}`}>
       {/* 🔵 Top strip with CTA */}
       <div
-        ref={topStripRef}
+        // ref={topStripRef}
         className={`w-screen pointer-events-auto bg-lightBlue z-20 2xl:px-80 sm:px-20 xs:px-10 px-4 flex lg:flex-row flex-col sm:gap-4 gap-2 text-white justify-between sm:items-center py-[5px] relative transition-all duration-300`}
         
       >
 
-        <h1 className='font-bold '>Limited Time Offer - Activate Your 75% Off Coupon!</h1>
-        <div className='lg:w-auto w-full flex sm:flex-row flex-col sm:gap-20 gap-2 justify-between sm:items-center items-start'>
-          <h1 onClick={() => setIsFormVisible(true)} className='underline font-semibold cursor-pointer'>Activate Your Coupon Now</h1>
-          <span onClick={() => setIsFormVisible(true)} className='md:text-sm text-xs font-semibold bg-dakBlue px-4 py-2 rounded-lg border-[1px] border-white cursor-pointer'>
+        <h1 className='font-bold sm:text-lg text-xs text-center'>Limited Time Offer - Activate Your 75% Off Coupon!</h1>
+        <div className='lg:w-auto w-full flex flex-row  sm:gap-20 gap-2 justify-between items-center '>
+          <h1 onClick={() => setIsFormVisible(true)} className='md:text-lg text-[10px] underline font-semibold cursor-pointer'>Activate Your Coupon Now</h1>
+          <span onClick={() => setIsFormVisible(true)} className='md:text-lg text-[10px] font-semibold bg-dakBlue px-4 py-2 rounded-lg border-[1px] border-white cursor-pointer'>
             Claim your website + free Logo
           </span>
         </div>
 
-        {scrwidth < 600 && (
-          <span onClick={() => setIsNavVisible(isNavVisible ? false : true)} className='absolute bottom-0 right-0 text-4xl p-3  '>
-            {isNavVisible ? <RxCross1 /> : <IoMenu />}
-          </span>
-
-        )}
+        
       </div>
 
       {/* 🔵 Main navbar */}
@@ -92,10 +86,18 @@ const Navbar = () => {
         )}
 
         {/* 🔹 Contact Info */}
+        <div className='flex xl:gap-x-20 gap-x-6'>
         <a href="tel:+18327371637" className="flex font-semibold items-center md:text-sm text-xs"><IoMdCall /> : +1 832 737-1637</a>
         <span onClick={() => window.Tawk_API?.maximize()} className='cursor-pointer flex md:text-sm text-xs items-center gap-x-2 font-semibold rounded-full border-[1px] border-white bg-lightBlue md:px-4 py-2 px-2'>
           <IoChatbubble /> Live Chat
         </span>
+        </div>
+        {scrwidth < 600 && (
+          <span onClick={() => setIsNavVisible(isNavVisible ? false : true)} className=' bottom-0 right-0 text-3xl   '>
+            {isNavVisible ? <RxCross1 /> : <IoMenu />}
+          </span>
+
+        )}
       </div>
 
       {scrwidth < 600 && (

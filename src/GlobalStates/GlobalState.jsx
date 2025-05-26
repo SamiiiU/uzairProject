@@ -12,13 +12,12 @@ export const useGlobalContext = () => {
 export const GlobalProvider = ({ children }) => {
     // Example of global state (You can add more states as needed)
 
-    const [isQuote , setIsQuote] = useState(false);
-    const [isOrder , setIsOrder] = useState(false)
-    const [price , setPrice] = useState(null)
+    
     const [packageSelect , setPackage] = useState("");
     const [scrwidth, setWidth] = useState(window.innerWidth); 
     const [isFormVisible , setIsFormVisible] = useState(false);
     const [isNavVisible , setIsNavVisible] = useState(false)
+    const [showImageViewer , setShowImageViewer] = useState(true);
 
 
     // 👇 Smooth scroll with offset (for fixed navbar)
@@ -53,15 +52,13 @@ export const GlobalProvider = ({ children }) => {
 
     return (
         <GlobalContext.Provider value={{ 
-            isQuote , 
-            setIsQuote,
-            price , setPrice,
+            
             packageSelect , setPackage,
-            isOrder , setIsOrder,
             scrwidth,
             isFormVisible , setIsFormVisible,
             scrollToSection,
-            isNavVisible , setIsNavVisible
+            isNavVisible , setIsNavVisible,
+            showImageViewer , setShowImageViewer
 
             }}>
             {children}
