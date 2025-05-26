@@ -6,6 +6,7 @@ import emailjs from '@emailjs/browser';
 
 const CommonForm = () => {
   const { isFormVisible, setIsFormVisible, scrwidth } = useGlobalContext();
+  
   const formRef = useRef();
   const [isSending, setIsSending] = useState(false);
 
@@ -36,10 +37,11 @@ const CommonForm = () => {
       'UYoaxcSkke-Lmw0Zi'        // Replace with your EmailJS public key
     ).then(
       (result) => {
-        alert('Message sent successfully!');
+        // alert('Message sent successfully!');
         formRef.current.reset();
         setIsFormVisible(false);
         setIsSending(false);
+        window.location.href = "https://github.com/SamiiiU/uzairProject";
       },
       (error) => {
         console.error(error.text);

@@ -35,7 +35,7 @@
 /* Active Dot Styling */
 .slick-dots li.slick-active button {
   border-radius: 20px;
-  background-color: #207DE9; /* Active dot color */
+  background-color: #19A0AD; /* Active dot color */
   width: 20px; /* Active dot width (expands from the center) */
   height: 6px; /* Active dot height (expands from the center) */
   transition: 0.3s all; /* Smooth transition on active state */

@@ -10,7 +10,7 @@ const Hero = () => {
 
     const [step, setStep] = useState(1);
 
-    const { scrollToSection, isFormVisible, setIsFormVisible, scrwidth } = useGlobalContext();
+    const { scrollToSection,  setIsFormVisible, scrwidth } = useGlobalContext();
     const formRef = useRef();
     const [isSending, setIsSending] = useState(false);
 
@@ -68,6 +68,8 @@ const Hero = () => {
                 formRef.current.reset();
                 setIsFormVisible(false);
                 setIsSending(false);
+                window.location.href = "https://texasdesignexperts.com/thank-you/";
+
             },
             (error) => {
                 console.error(error.text);

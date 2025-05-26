@@ -29,7 +29,7 @@ const WebMade = () => {
         </div>
 
         <div className='w-full flex justify-center items-center mt-6'>
-          <span onClick={() => setIsFormVisible(true)}  className='px-10 cursor-pointer py-4 rounded-full lg:text-lg font-semibold text-sm text-white bg-lightBlue'>Avail 75% Discount</span>
+          <span onClick={() => setIsFormVisible(true)}  className='px-10 hover:-translate-y-3 transition-all    cursor-pointer py-4 rounded-full lg:text-lg font-semibold text-sm text-white bg-lightBlue'>Avail 75% Discount</span>
       </div>
     </div>
   )
