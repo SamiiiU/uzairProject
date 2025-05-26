@@ -334,7 +334,7 @@ export const packages_data = {
 export const web_work = [
     {
         title: 'Landing Pages', description: 'Attract and convert potential customers with high-converting landing pages designed for specific campaigns or products',
-        image: 'https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748069321/s7eazqtfkf2jpqn0bboa.webp'
+        image: 'https://res.cloudinary.com/dmwykcrki/image/upload/v1748283069/landing-page-design-and-development-services_vshnar.png'
     },
     {
         title: 'Business Website', description: 'Showcase your brand with user friendly website that reflects your businesses values and goals',
