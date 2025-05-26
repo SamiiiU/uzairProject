@@ -42,8 +42,8 @@ const Testimonals = () => {
           className='w-80 h-80  animate-fade-up transition-all rounded-full bg-slate-500 '
           style={{
             backgroundImage: `url('${showReview.image}')`,
-            backgroundSize: '150%',
-            backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            backgroundPosition: 'top',
           }}
         ></div>
 
