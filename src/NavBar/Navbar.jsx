@@ -57,10 +57,10 @@ const Navbar = () => {
         
       >
 
-        <h1 className='font-bold sm:text-lg text-xs text-center'>Limited Time Offer - Activate Your 75% Off Coupon!</h1>
+        <h1 className='font-bold sm:text-sm text-xs text-center'>Limited Time Offer - Activate Your 75% Off Coupon!</h1>
         <div className='lg:w-auto w-full flex flex-row  sm:gap-20 gap-2 justify-between items-center '>
-          <h1 onClick={() => setIsFormVisible(true)} className='md:text-lg text-[10px] underline font-semibold cursor-pointer'>Activate Your Coupon Now</h1>
-          <span onClick={() => setIsFormVisible(true)} className='md:text-lg text-[10px] font-semibold bg-dakBlue px-4 py-2 rounded-lg border-[1px] border-white cursor-pointer'>
+          <h1 onClick={() => setIsFormVisible(true)} className='md:text-sm text-[10px] underline font-semibold cursor-pointer'>Activate Your Coupon Now</h1>
+          <span onClick={() => setIsFormVisible(true)} className='md:text-sm text-[10px] font-semibold bg-dakBlue px-4 py-2 rounded-lg border-[1px] border-white cursor-pointer'>
             Claim your website + free Logo
           </span>
         </div>
@@ -87,8 +87,8 @@ const Navbar = () => {
 
         {/* 🔹 Contact Info */}
         <div className='flex xl:gap-x-20 gap-x-6'>
-        <a href="tel:+18327371637" className="flex font-semibold items-center md:text-sm text-xs"><IoMdCall /> : +1 832 737-1637</a>
-        <span onClick={() => window.Tawk_API?.maximize()} className='cursor-pointer flex md:text-sm text-xs items-center gap-x-2 font-semibold rounded-full border-[1px] border-white bg-lightBlue md:px-4 py-2 px-2'>
+        <a href="tel:+18327371637" className="flex font-semibold items-center md:text-lg text-xs"><IoMdCall /> : +1 832 737-1637</a>
+        <span onClick={() => window.Tawk_API?.maximize()} className='cursor-pointer flex md:text-lg text-xs items-center gap-x-2 font-semibold rounded-full border-[1px] border-white bg-lightBlue md:px-4 py-2 px-2'>
           <IoChatbubble /> Live Chat
         </span>
         </div>

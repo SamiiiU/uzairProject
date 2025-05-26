@@ -90,7 +90,7 @@ const Hero = () => {
             <div data-aos="fade-in" className='lg:w-1/2 w-full lg:items-start z-20 md:items-center md:px-0 sm:px-10 px-4 space-y-4 '>
 
 
-                <h1 className=' font-[400]   lg:text-5xl md:text-3xl text-3xl  '>
+                <h1 className=' font-bold   lg:text-5xl md:text-3xl text-3xl  '>
                     Get Your Website Designed & Claim a <br />
                     <strong className='animate-blink'>Free Logo for Just $199!</strong>
                     <span className='text-2xl mx-4'>(Originally $796)</span>

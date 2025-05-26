@@ -49,7 +49,7 @@ module.exports = {
       'fade-down': 'fade-down 0.8s ease-out',
       'fade-left': 'fade-left 0.8s ease-out',
       'fade-right': 'fade-right 0.8s ease-out',
-      'blink': 'blink 1.5s infinite',
+      'blink': 'blink 0.7s infinite',
     },
   },
   plugins: [],

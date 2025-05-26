@@ -38,7 +38,7 @@ const ReusableSlider = ({ children, MainClassName }) => {
 
 
         <div
-            className='md:w-[50%]   w-full h-96  animate-fade-up  rounded-3xl   transition-all  ' // here is the issue 
+            className='md:w-[50%]   w-full sm:h-96 h-64  animate-fade-up  rounded-3xl   transition-all  ' // here is the issue 
           style={{
             backgroundImage: `url('${slideShowing.image}')`,
             backgroundSize: 'cover',
