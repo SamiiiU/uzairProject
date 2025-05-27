@@ -43,21 +43,11 @@ const Our_work = () => {
 
       <div className='w-full bg-grayColor xl:h-[700px] md:h-[400px] h-[500px] grid md:grid-cols-4 md:grid-rows-2 grid-rows-4 grid-cols-2 gap-4 p-6'>
         {our_work_data[tabNum].images.slice(0, 8).map((image, index) => (
-          <>
-            {scrwidth > 600 ? (
-              <span onDoubleClick={() => handleShowImage(index)} key={index} className='col-span-1 row-span-1 ' style={{
-                backgroundImage: `url(${image})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'top',
-              }}></span>
-            ) : (
-              <span onClick={() => handleShowImage(index)} key={index} className='col-span-1 row-span-1 ' style={{
-                backgroundImage: `url(${image})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'top',
-              }}></span>
-            )}
-          </>
+          <span onClick={() => handleShowImage(index)} key={index} className='col-span-1 row-span-1 ' style={{
+            backgroundImage: `url(${image})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'top',
+          }}></span>
         ))}
       </div>
 
