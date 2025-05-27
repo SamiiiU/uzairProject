@@ -18,7 +18,7 @@ const CTA = () => {
         
         <h1 className='md:text-5xl sm:text-3xl text-2xl font-bold'>Get a Free Audit of Your Website</h1>
 
-        <p>Get professional and affordable web design, logo creation, social media branding, <br/>and animated videos tailored for U.S. startups and small businesses. Enjoy unlimited revisions, full ownership, free hosting, and fast delivery on all digital design services.</p>
+        <p>Get professional and affordable web design, logo creation, social media branding, <br/>and animated videos tailored for U.S. startups and small businesses. Enjoy unlimited revisions,<br> full ownership, free hosting, and fast delivery on all digital design services.</p>
 
         <div className='w-full flex  justify-center items-center md:gap-6 gap-3'>
             <button onClick={() => setIsFormVisible(true)} className='sm:px-10 px-3 sm:py-4 py-2  bg-dakBlue border-white border-[1px] font-semibold rounded-full'>Avail 75% Discount</button>
