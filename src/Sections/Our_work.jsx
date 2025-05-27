@@ -63,7 +63,7 @@ const Our_work = () => {
 
       {showImageViewer && (
         <div className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50">
-          <span onClick={() => setShowImageViewer(false)} className='top-4 right-4 cursor-pointer text-3xl absolute text-white'><RxCross1/></span>
+          {/* <span onClick={() => setShowImageViewer(false)} className='top-4 right-4 cursor-pointer text-3xl absolute text-white'><RxCross1/></span> */}
           <button
             onClick={() => {
               const newIndex =
@@ -72,16 +72,18 @@ const Our_work = () => {
               setCurrentImageIndex(newIndex);
               setShowModal(our_work_data[tabNum].images[newIndex]);
             }}
-            className="absolute left-4 top-1/2 text-white text-4xl font-bold z-50"
+            className="px-4 left-4 top-1/2 text-white text-4xl font-bold z-50"
           >
             ‹
           </button>
 
+          <div onClick={() => setShowImageViewer(false)} className='w-full h-[100vh] flex justify-center items-center '>
           <img
             src={showModal}
             alt="viewer"
             className="sm:max-w-full max-w-[80vw] max-h-[90vh] object-contain"
           />
+          </div>
 
           <button
             onClick={() => {
@@ -89,7 +91,7 @@ const Our_work = () => {
               setCurrentImageIndex(newIndex);
               setShowModal(our_work_data[tabNum].images[newIndex]);
             }}
-            className="absolute right-4 top-1/2 text-white text-4xl font-bold z-50"
+            className="px-4 right-4 top-1/2 text-white text-4xl font-bold z-50"
           >
             ›
           </button>

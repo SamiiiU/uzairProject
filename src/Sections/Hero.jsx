@@ -91,8 +91,8 @@ const Hero = () => {
 
 
                 <h1 className=' font-bold   lg:text-5xl md:text-3xl text-3xl  '>
-                    Get Your Website Designed & Claim a <br />
-                    <strong className='animate-blink'>Free Logo for Just $199!</strong>
+                    Get Your Website Designed & Claim a
+                    <strong className='animate-blink px-3'>Free Logo for Just $199!</strong>
                     <span className='text-2xl mx-4'>(Originally $796)</span>
                 </h1>
                 <div className='spac-y-2 sm:text-2xl'>

@@ -39,8 +39,8 @@ module.exports = {
         '100%': { opacity: '1', transform: 'translateX(0)' },
       },
       blink: {
-        '0%, 100%': { opacity : '1' , color : 'white' },
-        '50%': { opacity : '0.8' ,color : '#19A0AD'},
+        '0%, 100%': {  color : 'white' },
+        '50%': {  color : '#00DDFF'},
       },
     },
     animation: {
