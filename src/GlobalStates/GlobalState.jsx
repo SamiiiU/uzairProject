@@ -17,7 +17,7 @@ export const GlobalProvider = ({ children }) => {
     const [scrwidth, setWidth] = useState(window.innerWidth); 
     const [isFormVisible , setIsFormVisible] = useState(false);
     const [isNavVisible , setIsNavVisible] = useState(false)
-    const [showImageViewer , setShowImageViewer] = useState(true);
+    const [showImageViewer , setShowImageViewer] = useState(false);
 
 
     // 👇 Smooth scroll with offset (for fixed navbar)

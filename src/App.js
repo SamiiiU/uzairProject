@@ -9,6 +9,7 @@ import CommonForm from './CommonForm/CommonForm';
 import TawkMessenger from './LiveChat/TawkMessenger';
 
 import './app.css';
+import ImageViewer from './PreBuildComps/ImageViewer';
 
 
 const Our_Packages = lazy(() => import('./Sections/Our_Packages'));
@@ -21,7 +22,7 @@ function App() {
   return (
     <Suspense fallback={<Loader />}>
       <GlobalProvider>
-        <div className="relative overflow-x-hidden scrollbar-hidden font-poppins_sans">
+        <div className=" overflow-x-hidden scrollbar-hidden font-poppins_sans">
           <Navbar />
           <Hero />
 
@@ -35,10 +36,10 @@ function App() {
 
           <div id="Work">
             <Our_work />
-            <CTA />
-            <WebMade />
+            
           </div>
-
+          <CTA />
+          <WebMade />
           <div id="reviews">
             <Testimonals />
           </div>

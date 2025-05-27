@@ -9,47 +9,15 @@ import { RxCross1 } from "react-icons/rx";
 
 
 const Navbar = () => {
-  const { scrwidth, setIsFormVisible, scrollToSection, isNavVisible, setIsNavVisible } = useGlobalContext();
+  const { scrwidth, setIsFormVisible, scrollToSection, isNavVisible, setIsNavVisible , showImageViewer  } = useGlobalContext();
 
 
 
-  // const [showTopStrip, setShowTopStrip] = useState(true);
-  // const [lastScrollY, setLastScrollY] = useState(0);
-
-  // const topStripRef = useRef(null);
-  // const [topStripHeight, setTopStripHeight] = useState(0);
-
-  // useEffect(() => {
-  //   if (topStripRef.current) {
-  //     setTopStripHeight(topStripRef.current.offsetHeight);
-  //   }
-  // }, []);
-  
-  
-
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     if (scrwidth > 600) return; // ✅ Only run on mobile (less than 600px)
-  
-  //     const currentScrollY = window.scrollY;
-  //     if (currentScrollY > lastScrollY && currentScrollY > 50) {
-  //       // scrolling down
-  //       setShowTopStrip(false);
-  //     } else {
-  //       // scrolling up
-  //       setShowTopStrip(true);
-  //     }
-  //     setLastScrollY(currentScrollY);
-  //   };
-  
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => window.removeEventListener("scroll", handleScroll);
-  // }, [lastScrollY, scrwidth]);
   
   return (
     <div style={{
 
-    }} className={`fixed top-0 left-0 z-50 w-full ${isNavVisible ? '' : 'h-auto pointer-events-none'}`}>
+    }} className={`fixed top-0 left-0  z-50 ${showImageViewer ? 'hidden' : ' '}  w-full ${isNavVisible ? '' : 'h-auto pointer-events-none'}`}>
       {/* 🔵 Top strip with CTA */}
       <div
         // ref={topStripRef}

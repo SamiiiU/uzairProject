@@ -3,7 +3,7 @@ import { IoMdCall } from 'react-icons/io'
 import { useGlobalContext } from '../GlobalStates/GlobalState';
 
 const CTA = () => {
-  const { scrwidth , setIsFormVisible } = useGlobalContext();
+  const {  setIsFormVisible } = useGlobalContext();
 
   return (
     <div className='w-full text-white space-y-6   px-4 xl:px-28 sm:px-20  2xl:px-80 overflow-hidden   sm:py-20 py-24 bg-lightBlue z-10  relative text-center'>
