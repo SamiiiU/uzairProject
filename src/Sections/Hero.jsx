@@ -83,7 +83,7 @@ const Hero = () => {
     return (
 
         <div style={{ backgroundImage: `url(https://res.cloudinary.com/dwbt0uoa7/image/upload/v1748366747/oud9vmffi1krzlbdmnnq.webp)`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition :'center' }} className='w-full  h-auto bg-lightBlue  text-white 2xl:px-80 xl:px-28 px-2 sm:px-20    lg:pt-48 sm:pt-72 pt-48  pb-20 z-10 flex justify-between flex-col lg:flex-row gap-10  relative'>
-            <span className={`w-full h-full absolute top-0 z-10 left-0 ${scrwidth > 600 ? 'bg-[#06060661]/50' : 'bg-[#44757f/50]'}`} ></span>
+            <span className={`w-full h-full absolute top-0 z-10 left-0 ${scrwidth > 600 ? 'bg-[#06060630]/50' : 'bg-[#44757f/50]'}`} ></span>
 
             {/* Home text  */}
             <div data-aos="fade-in" className='lg:w-1/2 w-full lg:items-start z-20 md:items-center md:px-0 sm:px-10 px-4 space-y-4 '>
